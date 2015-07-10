@@ -1,0 +1,12 @@
+C:\Users\Uzunov\Desktop\Apis Toolbar\Bootstrapper1\bin\Debug\Bootstrapper1.exe
+C:\Users\Uzunov\Desktop\Apis Toolbar\Bootstrapper1\bin\Debug\Bootstrapper1.wixpdb
+obj\Debug\Bundle.wixobj
+obj\Debug\ApisToolbarBoostrapperInstaller.wixproj.BindContentsFileList.txt
+obj\Debug\ApisToolbarBoostrapperInstaller.wixproj.BindOutputsFileList.txt
+obj\Debug\ApisToolbarBoostrapperInstaller.wixproj.BindBuiltOutputsFileList.txt
+C:\Users\Uzunov\Desktop\ApisToolbar\Bootstrapper1\bin\Debug\Bootstrapper1.exe
+C:\Users\Uzunov\Desktop\ApisToolbar\Bootstrapper1\bin\Debug\Bootstrapper1.wixpdb
+C:\Users\Uzunov\Desktop\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\Bootstrapper1.exe
+C:\Users\Uzunov\Desktop\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\Bootstrapper1.wixpdb
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\Bootstrapper1.exe
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\Bootstrapper1.wixpdb

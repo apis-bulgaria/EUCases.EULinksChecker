@@ -1,0 +1,3 @@
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\cab1.cab
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\EULinksCheckerIEAddInMsi.msi
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\EULinksCheckerIEAddInMsi.wixpdb

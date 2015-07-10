@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="cCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="cCannotAddLink" xml:space="preserve">
+    <value>Please, select text to insert a link.</value>
+  </data>
+  <data name="cCheckFrLinks" xml:space="preserve">
+    <value>Check for links</value>
+  </data>
+  <data name="cConfirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="cEULinksChecker" xml:space="preserve">
+    <value>EULinksChecker</value>
+  </data>
+  <data name="cInformation" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="cInsertLink" xml:space="preserve">
+    <value>Insert link</value>
+  </data>
+  <data name="cLang" xml:space="preserve">
+    <value>Interface language:</value>
+  </data>
+  <data name="cLinkTo" xml:space="preserve">
+    <value>Link to</value>
+  </data>
+  <data name="cMsgChgLng" xml:space="preserve">
+    <value>You are about to change the user interface language.</value>
+  </data>
+  <data name="cMsgNoLinksSetByELCFound" xml:space="preserve">
+    <value>No links set by EULinksChecker have been found.</value>
+  </data>
+  <data name="cm_AllDocuments" xml:space="preserve">
+    <value>All documents</value>
+  </data>
+  <data name="cm_Credentials" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="cm_DocumentsIndexedWithThisTerm" xml:space="preserve">
+    <value>Documents indexed with this term:</value>
+  </data>
+  <data name="cm_DocumentsReferringToThisAct" xml:space="preserve">
+    <value>Documents referring to this act / provision:</value>
+  </data>
+  <data name="cm_EuCL" xml:space="preserve">
+    <value>EU case law</value>
+  </data>
+  <data name="cm_EuL" xml:space="preserve">
+    <value>EU legislation</value>
+  </data>
+  <data name="cm_InsertLink" xml:space="preserve">
+    <value>Insert link</value>
+  </data>
+  <data name="cm_NaCL" xml:space="preserve">
+    <value>National case law</value>
+  </data>
+  <data name="cm_NaL" xml:space="preserve">
+    <value>National legislation</value>
+  </data>
+  <data name="cm_RemoveLink" xml:space="preserve">
+    <value>Remove link</value>
+  </data>
+  <data name="cm_ShowToolTip" xml:space="preserve">
+    <value>Show tooltip</value>
+  </data>
+  <data name="cOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="cOperations" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="cPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="cPlsSelLink" xml:space="preserve">
+    <value>Please select text with links set by EULinksChecker.</value>
+  </data>
+  <data name="cPlzConfirm" xml:space="preserve">
+    <value>EULinksChecker will check for existence of references to EU legislation and case law and will set links to the cited legal acts. This may take a while. Please, confirm!</value>
+  </data>
+  <data name="cPlzConfirmRmLnk" xml:space="preserve">
+    <value>Please confirm the removal of links set by EULinksChecker.</value>
+  </data>
+  <data name="cPlzConfirmRmLnkSel" xml:space="preserve">
+    <value>The links set by EULinksChecker will be removed. Please confirm!</value>
+  </data>
+  <data name="cPlzEnterCompleteUrl" xml:space="preserve">
+    <value>Please enter the complete URL-address.</value>
+  </data>
+  <data name="cRemoveLinks" xml:space="preserve">
+    <value>Remove links</value>
+  </data>
+  <data name="cRemoveLinksFromSelection" xml:space="preserve">
+    <value>Remove links from selection</value>
+  </data>
+  <data name="cStAddNewLink" xml:space="preserve">
+    <value>Manual insertion of a link to external web resource</value>
+  </data>
+  <data name="cStCredentials" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="cStPutLinksAndTerms" xml:space="preserve">
+    <value>Recognition and highlighting of references to EU legislation and case law</value>
+  </data>
+  <data name="cStRemove1" xml:space="preserve">
+    <value>Removing links to EU legislation and case law set by EULinksChecker from the selected text</value>
+  </data>
+  <data name="cStRemoveLinksAndTerms" xml:space="preserve">
+    <value>Removal of links to EU legislation and case law set by “Check for links” function of EULinksChecker</value>
+  </data>
+  <data name="cStSave2Xml" xml:space="preserve">
+    <value>Save text to XML-file</value>
+  </data>
+  <data name="cSuccess" xml:space="preserve">
+    <value>Check for links completed.</value>
+  </data>
+  <data name="cUserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="Save2Xml" xml:space="preserve">
+    <value>Save text to XML-file</value>
+  </data>
+</root>

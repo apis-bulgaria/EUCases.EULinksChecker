@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EUCases.FrontendWcf.Classes" />
+  <xs:import schemaLocation="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EUCases.Tools.Classes" />
+  <xs:element name="PutAkomaNtosoLinks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="akomaNtosoXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="removeOldLinksIfAny" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PutAkomaNtosoLinksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/EUCases.FrontendWcf.Classes" minOccurs="0" name="PutAkomaNtosoLinksResult" nillable="true" type="q1:AkomaNtosoXmlResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLinkingStructures">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="language" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="json" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLinkingStructuresResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLinkingStructures">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="language" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLinkingStructuresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLinkingStructuresResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PutLinks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="compressedText" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PutLinksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EUCases.Tools.Classes" minOccurs="0" name="PutLinksResult" nillable="true" type="q2:TextPosWrapper" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PutLinksText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="text" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PutLinksTextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/EUCases.Tools.Classes" minOccurs="0" name="PutLinksTextResult" nillable="true" type="q3:TextPosWrapper" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcessBgNatPlainTextOnlyNationals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="text" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="toEsacpeSpecialSymbolsInLinks" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcessBgNatPlainTextOnlyNationalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ProcessBgNatPlainTextOnlyNationalsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

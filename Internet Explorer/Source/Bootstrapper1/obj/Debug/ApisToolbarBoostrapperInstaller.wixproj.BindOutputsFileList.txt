@@ -1,0 +1,2 @@
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\Bootstrapper1.exe
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\Bootstrapper1.wixpdb

@@ -1,0 +1,13 @@
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\cab1.cab
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\SetupProject2.msi
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\SetupProject2.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\EULinksCheckerIEAddInMsi.wixproj.BindContentsFileListnull.txt
+obj\Debug\EULinksCheckerIEAddInMsi.wixproj.BindOutputsFileListnull.txt
+obj\Debug\EULinksCheckerIEAddInMsi.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\Uzunov\Desktop\EUCasesToolbarFixing\EUCases\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\cab1.cab
+C:\Users\Uzunov\Desktop\EUCasesToolbarFixing\EUCases\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\SetupProject2.msi
+C:\Users\Uzunov\Desktop\EUCasesToolbarFixing\EUCases\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\SetupProject2.wixpdb
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\cab1.cab
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\EULinksCheckerIEAddInMsi.msi
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\EULinksCheckerIEAddInMsi.wixpdb

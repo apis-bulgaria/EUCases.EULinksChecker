@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cAll" xml:space="preserve">
+    <value>Alles</value>
+  </data>
+  <data name="cCancel" xml:space="preserve">
+    <value>Stornieren</value>
+  </data>
+  <data name="cm_AllDocuments" xml:space="preserve">
+    <value>Alle Dokumente</value>
+  </data>
+  <data name="cm_Credentials" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="cm_DocumentsIndexedWithThisTerm" xml:space="preserve">
+    <value>Dokumente mit diesem Begriff indiziert:</value>
+  </data>
+  <data name="cm_EuCL" xml:space="preserve">
+    <value>EU-Rechtsprechung</value>
+  </data>
+  <data name="cm_EuL" xml:space="preserve">
+    <value>EU-Gesetzgebung</value>
+  </data>
+  <data name="cm_NaCL" xml:space="preserve">
+    <value>Nationale Rechtsprechung</value>
+  </data>
+  <data name="cm_NaL" xml:space="preserve">
+    <value>Nationale Gesetzgebung</value>
+  </data>
+  <data name="cm_ShowToolTip" xml:space="preserve">
+    <value>Hinweis anzeigen</value>
+  </data>
+  <data name="cOK" xml:space="preserve">
+    <value>Bestätigen</value>
+  </data>
+  <data name="cPassword" xml:space="preserve">
+    <value>Kennwort</value>
+  </data>
+  <data name="cUserName" xml:space="preserve">
+    <value>Benutzername</value>
+  </data>
+  <data name="cCheckFrLinks" xml:space="preserve">
+    <value>Überprüfung für Links</value>
+  </data>
+  <data name="cEULinksChecker" xml:space="preserve">
+    <value>EU Links Checker</value>
+  </data>
+  <data name="cOperations" xml:space="preserve">
+    <value>Handhabungen</value>
+  </data>
+  <data name="cRemoveLinks" xml:space="preserve">
+    <value>Links entfernen</value>
+  </data>
+  <data name="Save2Xml" xml:space="preserve">
+    <value>Text in XML-Datei speichern</value>
+  </data>
+  <data name="cInsertLink" xml:space="preserve">
+    <value>Link einfügen</value>
+  </data>
+  <data name="cRemoveLinksFromSelection" xml:space="preserve">
+    <value>Links von Auswahl entfernen</value>
+  </data>
+  <data name="cConfirmation" xml:space="preserve">
+    <value>Bestätigung</value>
+  </data>
+  <data name="cPlzConfirm" xml:space="preserve">
+    <value>EULinksChecker wird überprüfen ob Verweise auf EU-Gesetzgebung oder Rechtsprechung  vorhanden sind und wird Links zu den zitierten Rechtsakten einfügen. Dies kann eine Weile dauern. Bitte, bestätigen!</value>
+  </data>
+  <data name="cCannotAddLink" xml:space="preserve">
+    <value>Bitte, markieren Sie einen Text um einen Link einzufügen.</value>
+  </data>
+  <data name="cm_DocumentsReferringToThisAct" xml:space="preserve">
+    <value>Dokumente, die auf diesen Akt / Vorschrift verweisen</value>
+  </data>
+  <data name="cm_RemoveLink" xml:space="preserve">
+    <value>Link entfernen</value>
+  </data>
+  <data name="cm_InsertLink" xml:space="preserve">
+    <value>Link einfügen</value>
+  </data>
+  <data name="cInformation" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="cSuccess" xml:space="preserve">
+    <value>Überprüfung für Links abgeschlossen.</value>
+  </data>
+  <data name="cLinkTo" xml:space="preserve">
+    <value>Link zu</value>
+  </data>
+  <data name="cPlzEnterCompleteUrl" xml:space="preserve">
+    <value>Bitte geben Sie die vollständige URL.</value>
+  </data>
+  <data name="cLang" xml:space="preserve">
+    <value>Sprache der Schnittstelle:</value>
+  </data>
+  <data name="cMsgChgLng" xml:space="preserve">
+    <value>Sie sind dabei, die Sprache der Benutzeroberfläche zu ändern.</value>
+  </data>
+  <data name="cPlzConfirmRmLnk" xml:space="preserve">
+    <value>Bitte bestätigen Sie die Entfernung von Links gesetzt von EULinksCheker.</value>
+  </data>
+  <data name="cPlzConfirmRmLnkSel" xml:space="preserve">
+    <value>Die vom EULinksChecker gesetzten Links werden gelöscht. Bitte, bestätigen!</value>
+  </data>
+  <data name="cStAddNewLink" xml:space="preserve">
+    <value>Manuelle Einfügung vom Link zur externen Web-Ressource</value>
+  </data>
+  <data name="cStCredentials" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="cStPutLinksAndTerms" xml:space="preserve">
+    <value>Erkennung und Hervorhebung von Verweisen auf EU-Gesetzgebung und Rechtsprechung</value>
+  </data>
+  <data name="cStRemove1" xml:space="preserve">
+    <value>Entfernung von den vom EULinksChecker gesetzten Links die auf EU-Gesetzgebung und Rechtsprechung verweisen</value>
+  </data>
+  <data name="cStRemoveLinksAndTerms" xml:space="preserve">
+    <value>Entfernung der Links gesetzt von ''Überprüfen Sie für Links'' Funktion des EULinksCheckers</value>
+  </data>
+  <data name="cStSave2Xml" xml:space="preserve">
+    <value>Speichern Sie den Text in XML-file</value>
+  </data>
+  <data name="cPlsSelLink" xml:space="preserve">
+    <value>Bitte, wählen Sie einen Text mit Links gesetzt vom EULinksChecker.</value>
+  </data>
+  <data name="cMsgNoLinksSetByELCFound" xml:space="preserve">
+    <value>Keine Links vom EULinksChecker gefunden.</value>
+  </data>
+  <data name="cErrorOccured" xml:space="preserve">
+    <value>Fehler aufgetreten.</value>
+  </data>
+  <data name="cWorking" xml:space="preserve">
+    <value>Überprüfen auf Links...</value>
+  </data>
+</root>

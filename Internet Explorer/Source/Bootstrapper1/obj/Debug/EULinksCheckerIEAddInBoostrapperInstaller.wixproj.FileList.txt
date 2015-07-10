@@ -1,0 +1,10 @@
+obj\Debug\Bundle.wixobj
+obj\Debug\EULinksCheckerIEAddInBoostrapperInstaller.wixproj.BindContentsFileList.txt
+obj\Debug\EULinksCheckerIEAddInBoostrapperInstaller.wixproj.BindOutputsFileList.txt
+obj\Debug\EULinksCheckerIEAddInBoostrapperInstaller.wixproj.BindBuiltOutputsFileList.txt
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.exe
+C:\Users\Uzunov\Desktop\EUCases\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.wixpdb
+C:\Users\Uzunov\Desktop\EUCasesToolbarFixing\EUCases\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.exe
+C:\Users\Uzunov\Desktop\EUCasesToolbarFixing\EUCases\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.wixpdb
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.exe
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.wixpdb

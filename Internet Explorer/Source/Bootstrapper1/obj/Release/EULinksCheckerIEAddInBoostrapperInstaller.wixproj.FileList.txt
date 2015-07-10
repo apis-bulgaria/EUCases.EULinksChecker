@@ -1,0 +1,6 @@
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\Bootstrapper1\bin\Release\EULinksCheckerIEAddInBoostrapperInstaller.exe
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\Bootstrapper1\bin\Release\EULinksCheckerIEAddInBoostrapperInstaller.wixpdb
+obj\Release\Bundle.wixobj
+obj\Release\EULinksCheckerIEAddInBoostrapperInstaller.wixproj.BindContentsFileList.txt
+obj\Release\EULinksCheckerIEAddInBoostrapperInstaller.wixproj.BindOutputsFileList.txt
+obj\Release\EULinksCheckerIEAddInBoostrapperInstaller.wixproj.BindBuiltOutputsFileList.txt

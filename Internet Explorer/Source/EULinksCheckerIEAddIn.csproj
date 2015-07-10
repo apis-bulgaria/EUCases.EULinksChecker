@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA46DE94-AD3A-4714-8C1F-9652CD8931B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EUCases</RootNamespace>
+    <AssemblyName>EULinksCheckerIEAddIn</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>ApisToolbarSnk.snk</AssemblyOriginatorKeyFile>
+    <Win32Resource>
+    </Win32Resource>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ffdc4657f9a00288, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Interop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>dll\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes.cs" />
+    <Compile Include="BandObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\LanguagesHelper.cs" />
+    <Compile Include="Classes\RegistryHelper.cs" />
+    <Compile Include="Classes\UserRegistryData.cs" />
+    <Compile Include="ComInterop.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="EULinksCheckerIEAddIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EULinksCheckerIEAddIn.Designer.cs">
+      <DependentUpon>EULinksCheckerIEAddIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\fCredentials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\fCredentials.Designer.cs">
+      <DependentUpon>fCredentials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\fInsertLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\fInsertLink.Designer.cs">
+      <DependentUpon>fInsertLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\fMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\fMessageBox.Designer.cs">
+      <DependentUpon>fMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\TranslationEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TranslationEN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\TranslationBG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TranslationBG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\TranslationDE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TranslationDE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\TranslationFR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TranslationFR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\TranslationIT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TranslationIT.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BandObject.resx">
+      <DependentUpon>BandObject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EULinksCheckerIEAddIn.resx">
+      <DependentUpon>EULinksCheckerIEAddIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\fCredentials.resx">
+      <DependentUpon>fCredentials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\fInsertLink.resx">
+      <DependentUpon>fInsertLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\fMessageBox.resx">
+      <DependentUpon>fMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\TranslationEN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TranslationEN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\TranslationBG.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TranslationBG.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\TranslationDE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TranslationDE.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\TranslationFR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TranslationFR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\TranslationIT.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TranslationIT.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApisToolbarSnk.snk" />
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\RelDocs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowDescription.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmlContent.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\Interop.SHDocVw.dll" />
+    <Content Include="dll\Microsoft.mshtml.dll" />
+    <Content Include="Resources\Script.js" />
+    <Content Include="Resources\Style.css" />
+    <None Include="Resources\SaveXml.jpg" />
+    <None Include="Resources\RemoveLink.png" />
+    <None Include="Resources\RemoveAllLinks.jpg" />
+    <None Include="Resources\Credentials.jpg" />
+    <None Include="Resources\CheckForLinks.jpg" />
+    <None Include="Resources\AddNewLink.png" />
+    <None Include="Resources\addin.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

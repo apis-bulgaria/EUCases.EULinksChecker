@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  	background: white;
+  	color: #333333;
+  	padding: 0;
+  	margin: 0;
+  	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  	font-size: 12px;
+  	line-height: 1.5;
+  	position: relative;
+  	cursor: default; 
+  	}
+
+a {
+  	color:#002F71;
+  	text-decoration: none;
+  	line-height: inherit; 
+	}
+	
+a:hover, a:focus {
+    color: #008EBD; 
+	}
+
+#DivTopYellow {
+	background-color:#FFEF41;
+	width: 100%;
+	height:100px;
+	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 0;
+  	margin-bottom: 0;
+	border-top:solid 1px #E8D54D;
+	border-bottom:solid 1px #E8D54D;
+  	}
+  
+#DivTopGradient {
+	width:100%;
+	height:30px;
+	background: -webkit-linear-gradient(#D4E7FF, white); /* For Safari */
+	background: -o-linear-gradient(#D4E7FF, white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#D4E7FF, white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#D4E7FF, white); /* Standard syntax (must be last) */
+	}
+	
+#DivTopBlue {
+	width:100%;
+	height:10px;
+	background-color:#D4E7FF;
+	border-bottom:solid 1px #A3CAFF;
+	}
+
+#DivBottomBlue {
+	width:100%;
+	height:50px;
+	background-color:#D4E7FF;
+	border-top:solid 1px #A3CAFF;
+	position:relative;
+	left:0px;
+	bottom:0px;
+	}
+	
+#DivBottomBlueFixed {
+	width:100%;
+	height:50px;
+	background-color:#D4E7FF;
+	border-top:solid 1px #A3CAFF;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	}
+	
+#TableContent {
+	margin:20px;
+	}
+
+.TdImage {
+	width: 40px;
+	height:40px;
+	}
+
+.TdHeader {
+	font-weight:bold; 
+	font-size:16px;
+	}
+
+.Container {
+	font-size:14px;
+	padding: 20px;
+	
+	}
+
+.Term {
+	font-size:16px;
+	color:#D0B300;
+	font-weight:bold;
+	}
+	
+h1 {
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	}
+	
+h2 {
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+	font-weight:bold;
+	acolor:#D0B300;
+	}
+
+.article {
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	}
+
+.PEnd {
+	font-size:12px;
+	font-style:italic;
+	text-align:center;
+	}

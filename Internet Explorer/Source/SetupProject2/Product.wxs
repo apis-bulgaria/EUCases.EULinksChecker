@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include "config.wxi"?>
+	<Product Id="BF30B1B1-A0E1-4AE3-B627-E065A47C78FC" Name="EULinksCheckerIEAddIn" Language="1033" Version="1.0.0.0" Manufacturer="Apis" UpgradeCode="11dbaaef-bbcf-4c7d-b84d-e3fbc9ee90fc">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" InstallPrivileges="elevated"/>
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of EULinksCheckerIEAddIn is already installed." />
+		<MediaTemplate />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder" Name="Item">
+        <Directory Id="ProductDirectory" Name="$(var.ProductName)">
+          <Directory Id="GAC" Name="GAC">
+            <Component Id="RT_EULinksCheckerIEAddIn" Guid="{75E66F3C-46AE-4C5D-998D-87B28B8B0625}" DiskId="1">              
+              
+              <File Id="F_RT_EULinksCheckerIEAddIn" LongName="EULinksCheckerIEAddIn.dll" Source="$(var.SourceDir)\EULinksCheckerIEAddIn.dll" KeyPath="yes" Assembly=".net"/>                            
+              
+              <Registry Id="F_RT_EULinksCheckerIEAddIn_AssemblyFolders" Root="HKLM" Key="SOFTWARE\Microsoft\.NETFramework\AssemblyFolders\[ProductName]" Value="[$RT_EULinksCheckerIEAddIn]" Type="string"/>
+              <!-- Register the EULinksCheckerIEAddIn class in the Classes Root -->
+              <Class Id="{75E66F3C-46AE-4C5D-998D-87B28B8B0625}" Context="InprocServer32" Description="EUCases.EULinksCheckerIEAddIn" ThreadingModel="both" ForeignServer="mscoree.dll">
+                <ProgId Id="EUCases.EULinksCheckerIEAddIn" Description="EUCases.EULinksCheckerIEAddIn" />
+              </Class>
+              <!-- Register the EULinksCheckerIEAddIn class in the Classes Root -->
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\Implemented Categories\{00021494-0000-0000-C000-000000000046}" Value="" Type="string" Action="write" />
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32\1.0.0.0" Name="Class" Value="EUCases.EULinksCheckerIEAddIn" Type="string" Action="write" />
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32\1.0.0.0" Name="Assembly" Value="EULinksCheckerIEAddIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1075a55890e7e51d" Type="string" Action="write" />
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v2.0.50727" Type="string" Action="write" />
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32\1.0.0.0" Name="CodeBase" Value="" Type="string" Action="write" />
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32" Name="Class" Value="EUCases.EULinksCheckerIEAddIn" Type="string" Action="write" />
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32" Name="Assembly" Value="EULinksCheckerIEAddIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1075a55890e7e51d" Type="string" Action="write" />
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32" Name="RuntimeVersion" Value="v2.0.50727" Type="string" Action="write" />
+              <RegistryValue Root="HKCR" Key="CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32" Name="CodeBase" Value="" Type="string" Action="write" />              
+              <!-- Register the Toolbar class for the Local Machine -->
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\Implemented Categories\{00021494-0000-0000-C000-000000000046}" Value="" Type="string" Action="write" />
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32\1.0.0.0" Name="Class" Value="EUCases.EULinksCheckerIEAddIn" Type="string" Action="write" />
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32\1.0.0.0" Name="Assembly" Value="EULinksCheckerIEAddIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1075a55890e7e51d" Type="string" Action="write" />
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32\1.0.0.0" Name="RuntimeVersion" Value="v2.0.50727" Type="string" Action="write" />
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32\1.0.0.0" Name="CodeBase" Value="" Type="string" Action="write" />
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32" Name="Class" Value="EUCases.EULinksCheckerIEAddIn" Type="string" Action="write" />
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32" Name="Assembly" Value="EULinksCheckerIEAddIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1075a55890e7e51d" Type="string" Action="write" />
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32" Name="RuntimeVersion" Value="v2.0.50727" Type="string" Action="write" />
+              <RegistryValue Root="HKLM" Key="Software\Classes\CLSID\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}\InprocServer32" Name="CodeBase" Value="" Type="string" Action="write" />
+              <!-- Register the EULinksCheckerIEAddIn as Toolbar -->
+              <RegistryValue Root="HKLM" Key="SOFTWARE\Microsoft\Internet Explorer\Toolbar" Name="{75E66F3C-46AE-4C5D-998D-87B28B8B0625}" Value="EULinksCheckerIEAddIn" Type="string" />
+              <!-- Register the EULinksCheckerIEAddIn as  Browser Helper Object -->
+              <RegistryValue Root="HKLM" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects\{75E66F3C-46AE-4C5D-998D-87B28B8B0625}" Name="NoExplorer" Value="1" Type="integer" />              
+            </Component>            
+            <!-- Add Interop.SHDocVw.dll into GAC -->
+            <Component Id="RT_Interop" DiskId="1">
+              <File Id="F_RT_Interop" LongName="Interop.SHDocVw.dll" Source="$(var.interopDir)\Interop.SHDocVw.dll" KeyPath="yes" Assembly=".net"/>
+            </Component>
+            <Component Id="RT_Interop_Mshtml" DiskId="1">
+              <File Id="F_RT_Interop_Mshtml" LongName="Microsoft.mshtml.dll" Source="$(var.interopDir)\Microsoft.mshtml.dll" KeyPath="yes" Assembly=".net"/>
+            </Component>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+    
+		<Feature Id="ProductFeature" Title="ApisToolbarMsi" Level="1">
+			<ComponentRef Id="RT_EULinksCheckerIEAddIn" />
+      <ComponentRef Id="RT_Interop" />
+      <ComponentRef Id="RT_Interop_Mshtml" />
+		</Feature>
+	</Product>
+</Wix>

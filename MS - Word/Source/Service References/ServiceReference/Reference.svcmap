@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5f90e00c-2d35-45c4-84c8-362408865516" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://techno.eucases.eu/FrontEndWS/LinkingService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LinkingService.xsd" MetadataType="Schema" ID="b9405469-9200-4275-9ef2-2b4590c7f499" SourceId="1" SourceUrl="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LinkingService.wsdl" MetadataType="Wsdl" ID="8f434dde-172f-40ce-842a-fe5bb8abad75" SourceId="1" SourceUrl="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?wsdl" />
+    <MetadataFile FileName="LinkingService1.xsd" MetadataType="Schema" ID="f5806f7b-0ade-449b-a722-692dd81c5030" SourceId="1" SourceUrl="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LinkingService.disco" MetadataType="Disco" ID="81ce30c0-9a29-41a3-aef6-2f3f301ef8ed" SourceId="1" SourceUrl="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?disco" />
+    <MetadataFile FileName="LinkingService2.xsd" MetadataType="Schema" ID="5037299f-033a-41ba-9d4e-ced9da7cedc7" SourceId="1" SourceUrl="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LinkingService3.xsd" MetadataType="Schema" ID="2a674dfa-e4fa-4794-9f6d-72f89d27bd61" SourceId="1" SourceUrl="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

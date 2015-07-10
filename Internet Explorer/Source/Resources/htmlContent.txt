@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=BG link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal>For the purposes of this Directive:</p>
+
+<p class=MsoNormal>'<span style='color:fuchsia'><a
+href="http://invtest.apis.bg/CortOrAct.html"><span style='color:fuchsia'>consumer</span></a></span>`
+means any natural person who, in contracts covered by this Directive, is acting
+for purposes which are outside his trade, business or profession;</p>
+
+<p class=MsoNormal>Whereas the use of means of distance communication must not
+lead to a reduction in the information provided to the consumer; whereas the
+information that is required to be sent to the consumer should therefore be
+determined, whatever the means of communication used; whereas the information
+supplied must also comply with the other relevant Community rules, in
+particular those in <span style='color:green'><a
+href="http://invtest.apis.bg/DocText.html#art1"
+title="Article 1 &#13;&#10;The purpose of this Directive is to protect consumers, persons carrying on a trade or business or practising a craft or profession and the interests of the public in general against misleading advertising and the unfair consequences thereof. &#13;"><span
+style='color:green'>Article 1 of Council Directive 84/450/EEC of 10 September
+1984</span></a></span> relating to the approximation of the laws, regulations
+and administrative provisions of the Member States concerning misleading advertising;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+obj\Debug\Product.wixobj
+C:\Users\Uzunov\Desktop\ToolbarProject\SetupProject2\bin\Debug\cab1.cab
+C:\Users\Uzunov\Desktop\ToolbarProject\SetupProject2\bin\Debug\SetupProject2.msi
+C:\Users\Uzunov\Desktop\ToolbarProject\SetupProject2\bin\Debug\SetupProject2.wixpdb
+obj\Debug\SetupProject2.wixproj.BindContentsFileListnull.txt
+obj\Debug\SetupProject2.wixproj.BindOutputsFileListnull.txt
+obj\Debug\SetupProject2.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\Uzunov\Desktop\Apis Toolbar\SetupProject2\bin\Debug\cab1.cab
+C:\Users\Uzunov\Desktop\Apis Toolbar\SetupProject2\bin\Debug\SetupProject2.msi
+C:\Users\Uzunov\Desktop\Apis Toolbar\SetupProject2\bin\Debug\SetupProject2.wixpdb

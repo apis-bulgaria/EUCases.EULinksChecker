@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['getbandinfo',['GetBandInfo',['../class_band_objects_lib_1_1_band_object.html#a9fca07566cf5b3eb542dc5c81bbddf20',1,'BandObjectsLib.BandObject.GetBandInfo()'],['../interface_band_objects_lib_1_1_i_desk_band.html#adbf3a92266e0f35a1b0c3195c3ab0518',1,'BandObjectsLib.IDeskBand.GetBandInfo()'],['../class_e_u_cases_1_1_e_u_links_checker_i_e_add_in.html#a8ca1e4e9af427b91e1006c2da1c89d6d',1,'EUCases.EULinksCheckerIEAddIn.GetBandInfo()']]],
+  ['getclassid',['GetClassID',['../interface_band_objects_lib_1_1_i_persist.html#ad445f5e5edd3881ffa17fd994cae239b',1,'BandObjectsLib.IPersist.GetClassID()'],['../interface_band_objects_lib_1_1_i_persist_stream.html#a3b3c8ccd2135dabc5d49b0c841bf7622',1,'BandObjectsLib.IPersistStream.GetClassID()']]],
+  ['getsite',['GetSite',['../class_band_objects_lib_1_1_band_object.html#a8ca3bcbffaefc7196c9e7b52c38a058a',1,'BandObjectsLib.BandObject.GetSite()'],['../interface_band_objects_lib_1_1_i_object_with_site.html#a95986e30c3475263c617f6b3c5039249',1,'BandObjectsLib.IObjectWithSite.GetSite()']]],
+  ['getsizemax',['GetSizeMax',['../interface_band_objects_lib_1_1_i_persist_stream.html#acbe438820a71e6640ae2434ed99a5aa2',1,'BandObjectsLib::IPersistStream']]],
+  ['getwindow',['GetWindow',['../class_band_objects_lib_1_1_band_object.html#ac6cbebb8f544d3d55c94f9cdf8d38dc3',1,'BandObjectsLib.BandObject.GetWindow()'],['../interface_band_objects_lib_1_1_i_ole_window.html#abdcd84fef092138a973d91e3eba80bf4',1,'BandObjectsLib.IOleWindow.GetWindow()'],['../interface_band_objects_lib_1_1_i_docking_window.html#ae712f78f82ccbba722022122a73e9ae8',1,'BandObjectsLib.IDockingWindow.GetWindow()'],['../interface_band_objects_lib_1_1_i_desk_band.html#afb33643eab3f53b230d6e70719962eeb',1,'BandObjectsLib.IDeskBand.GetWindow()']]]
+];

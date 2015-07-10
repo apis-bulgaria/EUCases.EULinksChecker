@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LinkingService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EUCases.FrontendWcf.Classes" />
+      <xsd:import schemaLocation="http://techno.eucases.eu/FrontEndWS/LinkingService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EUCases.Tools.Classes" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILinkingService_PutAkomaNtosoLinks_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutAkomaNtosoLinks" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_PutAkomaNtosoLinks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutAkomaNtosoLinksResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_UpdateLinkingStructures_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLinkingStructures" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_UpdateLinkingStructures_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLinkingStructuresResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_GetLinkingStructures_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLinkingStructures" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_GetLinkingStructures_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLinkingStructuresResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_PutLinks_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutLinks" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_PutLinks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutLinksResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_PutLinksText_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutLinksText" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_PutLinksText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutLinksTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_ProcessBgNatPlainTextOnlyNationals_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessBgNatPlainTextOnlyNationals" />
+  </wsdl:message>
+  <wsdl:message name="ILinkingService_ProcessBgNatPlainTextOnlyNationals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessBgNatPlainTextOnlyNationalsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILinkingService">
+    <wsdl:operation name="PutAkomaNtosoLinks">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinkingService/PutAkomaNtosoLinks" message="tns:ILinkingService_PutAkomaNtosoLinks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinkingService/PutAkomaNtosoLinksResponse" message="tns:ILinkingService_PutAkomaNtosoLinks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLinkingStructures">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinkingService/UpdateLinkingStructures" message="tns:ILinkingService_UpdateLinkingStructures_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinkingService/UpdateLinkingStructuresResponse" message="tns:ILinkingService_UpdateLinkingStructures_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkingStructures">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinkingService/GetLinkingStructures" message="tns:ILinkingService_GetLinkingStructures_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinkingService/GetLinkingStructuresResponse" message="tns:ILinkingService_GetLinkingStructures_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutLinks">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinkingService/PutLinks" message="tns:ILinkingService_PutLinks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinkingService/PutLinksResponse" message="tns:ILinkingService_PutLinks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutLinksText">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinkingService/PutLinksText" message="tns:ILinkingService_PutLinksText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinkingService/PutLinksTextResponse" message="tns:ILinkingService_PutLinksText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessBgNatPlainTextOnlyNationals">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILinkingService/ProcessBgNatPlainTextOnlyNationals" message="tns:ILinkingService_ProcessBgNatPlainTextOnlyNationals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILinkingService/ProcessBgNatPlainTextOnlyNationalsResponse" message="tns:ILinkingService_ProcessBgNatPlainTextOnlyNationals_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILinkingService" type="tns:ILinkingService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PutAkomaNtosoLinks">
+      <soap:operation soapAction="http://tempuri.org/ILinkingService/PutAkomaNtosoLinks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLinkingStructures">
+      <soap:operation soapAction="http://tempuri.org/ILinkingService/UpdateLinkingStructures" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkingStructures">
+      <soap:operation soapAction="http://tempuri.org/ILinkingService/GetLinkingStructures" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutLinks">
+      <soap:operation soapAction="http://tempuri.org/ILinkingService/PutLinks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutLinksText">
+      <soap:operation soapAction="http://tempuri.org/ILinkingService/PutLinksText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessBgNatPlainTextOnlyNationals">
+      <soap:operation soapAction="http://tempuri.org/ILinkingService/ProcessBgNatPlainTextOnlyNationals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LinkingService">
+    <wsdl:port name="BasicHttpBinding_ILinkingService" binding="tns:BasicHttpBinding_ILinkingService">
+      <soap:address location="http://techno.eucases.eu/FrontEndWS/LinkingService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

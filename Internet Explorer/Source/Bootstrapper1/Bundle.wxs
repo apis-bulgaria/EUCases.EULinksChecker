@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+	<Bundle Name="EULinksCheckerIEAddIn" Version="1.0.0.0" Manufacturer="Apis" UpgradeCode="8ec740b0-d4c9-42b4-b76b-3c618abba35a">
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense">
+      <bal:WixStandardBootstrapperApplication LicenseFile=".\License\gpl-3.0.rtf" />
+    </BootstrapperApplicationRef>
+		<Chain>      
+      <MsiPackage
+        Id="Setup"
+        Compressed="yes"
+        SourceFile="..\SetupProject2\bin\Debug\EULinksCheckerIEAddInMsi.msi"
+        Vital="yes">
+        <MsiProperty Name="INSTALLLOCATION" Value="[InstallFolder]" />
+      </MsiPackage>      
+		</Chain>
+	</Bundle>
+</Wix>

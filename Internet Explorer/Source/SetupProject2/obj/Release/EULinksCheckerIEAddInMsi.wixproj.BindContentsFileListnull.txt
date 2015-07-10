@@ -1,0 +1,3 @@
+..\bin\Debug\EULinksCheckerIEAddIn.dll
+..\dll\Interop.SHDocVw.dll
+..\dll\Microsoft.mshtml.dll

@@ -1,0 +1,163 @@
+\hypertarget{namespace_band_objects_lib}{\section{Package Band\+Objects\+Lib}
+\label{namespace_band_objects_lib}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1___i_service_provider}{\+\_\+\+I\+Service\+Provider}
+\item 
+class \hyperlink{class_band_objects_lib_1_1_band_object}{Band\+Object}
+\item 
+class \hyperlink{class_band_objects_lib_1_1_band_object_attribute}{Band\+Object\+Attribute}
+\begin{DoxyCompactList}\small\item\em Specifies Style of the band object, its Name(displayed in explorer menu) and Help\+Text(displayed in status bar when menu command selected). \end{DoxyCompactList}\item 
+struct \hyperlink{struct_band_objects_lib_1_1_d_e_s_k_b_a_n_d_i_n_f_o}{D\+E\+S\+K\+B\+A\+N\+D\+I\+N\+F\+O}
+\item 
+class \hyperlink{class_band_objects_lib_1_1_explorer_g_u_i_ds}{Explorer\+G\+U\+I\+Ds}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1_i_desk_band}{I\+Desk\+Band}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1_i_docking_window}{I\+Docking\+Window}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1_i_input_object}{I\+Input\+Object}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1_i_input_object_site}{I\+Input\+Object\+Site}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1_i_object_with_site}{I\+Object\+With\+Site}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1_i_ole_window}{I\+Ole\+Window}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1_i_persist}{I\+Persist}
+\item 
+interface \hyperlink{interface_band_objects_lib_1_1_i_persist_stream}{I\+Persist\+Stream}
+\item 
+struct \hyperlink{struct_band_objects_lib_1_1_m_s_g}{M\+S\+G}
+\item 
+class {\bfseries No\+Border\+Tool\+Strip\+Renderer}
+\item 
+struct \hyperlink{struct_band_objects_lib_1_1_p_o_i_n_t}{P\+O\+I\+N\+T}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462c}{Band\+Object\+Style} \+: uint \{ \hyperlink{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca06ce2a25e5d12c166a36f654dbea6012}{Band\+Object\+Style.\+Vertical} = 1, 
+\hyperlink{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462cac1b5fa03ecdb95d4a45dd1c40b02527f}{Band\+Object\+Style.\+Horizontal} = 2, 
+\hyperlink{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca6951e77ca95592fbf49fd9ada48203d2}{Band\+Object\+Style.\+Explorer\+Toolbar} = 4, 
+\hyperlink{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca51490cfc82ab8ecb613284aeb75d4e8c}{Band\+Object\+Style.\+Taskbar\+Tool\+Bar} = 8
+ \}
+\begin{DoxyCompactList}\small\item\em Represents different styles of a band object. \end{DoxyCompactList}\item 
+enum \hyperlink{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683d}{D\+B\+I\+M} \+: uint \{ \\*
+\hyperlink{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683dac5e099554555a9dab0a434effe61372b}{D\+B\+I\+M.\+M\+I\+N\+S\+I\+Z\+E} = 0x0001, 
+\hyperlink{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daaa312581a268989654f7f5c7b023c964}{D\+B\+I\+M.\+M\+A\+X\+S\+I\+Z\+E} = 0x0002, 
+\hyperlink{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daf36486258ab7a6bde60e99c2b88553d5}{D\+B\+I\+M.\+I\+N\+T\+E\+G\+R\+A\+L} = 0x0004, 
+\hyperlink{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683da93234b302785a1fd5b0c196dac33d695}{D\+B\+I\+M.\+A\+C\+T\+U\+A\+L} = 0x0008, 
+\\*
+\hyperlink{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683da6f9dccd85b2e0786c8d522045365eb48}{D\+B\+I\+M.\+T\+I\+T\+L\+E} = 0x0010, 
+\hyperlink{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683dada9738da822f67447434d681406b05ec}{D\+B\+I\+M.\+M\+O\+D\+E\+F\+L\+A\+G\+S} = 0x0020, 
+\hyperlink{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daa3fbb4ce45005386c4e9a7495555268a}{D\+B\+I\+M.\+B\+K\+C\+O\+L\+O\+R} = 0x0040
+ \}
+\item 
+enum \hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32ca}{D\+B\+I\+M\+F} \+: int \{ \\*
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa1e23852820b9154316c7c06e2b7ba051}{D\+B\+I\+M\+F.\+N\+O\+R\+M\+A\+L} = 0x0001, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caac6e6dc18b53b4c2681394b9d8aefcec7}{D\+B\+I\+M\+F.\+F\+I\+X\+E\+D} = 0x0002, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caacb1ba534aeaf3afe2cd475632a1f9428}{D\+B\+I\+M\+F.\+F\+I\+X\+E\+D\+B\+M\+P} = 0x0004, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caaac0210512520c9ec2b3b24d17ce84d4b}{D\+B\+I\+M\+F.\+V\+A\+R\+I\+A\+B\+L\+E\+H\+E\+I\+G\+H\+T} = 0x0008, 
+\\*
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caab34f6e2e9fd26af68b7e462c49377e32}{D\+B\+I\+M\+F.\+U\+N\+D\+E\+L\+E\+T\+E\+A\+B\+L\+E} = 0x0010, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa3f4ce7dd7df77e99e81db1d7f585c4cc}{D\+B\+I\+M\+F.\+D\+E\+B\+O\+S\+S\+E\+D} = 0x0020, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caaa3fbb4ce45005386c4e9a7495555268a}{D\+B\+I\+M\+F.\+B\+K\+C\+O\+L\+O\+R} = 0x0040, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa61184ef335af146680e65056df57bbe2}{D\+B\+I\+M\+F.\+U\+S\+E\+C\+H\+E\+V\+R\+O\+N} = 0x0080, 
+\\*
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa14d6a3e0201f58bfe7c01e775973e80e}{D\+B\+I\+M\+F.\+B\+R\+E\+A\+K} = 0x0100, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa121b152c338cb89bd35ce3d3323e7bb6}{D\+B\+I\+M\+F.\+A\+D\+D\+T\+O\+F\+R\+O\+N\+T} = 0x0200, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa2890c88d05656ea8f815de9580853af4}{D\+B\+I\+M\+F.\+T\+O\+P\+A\+L\+I\+G\+N} = 0x0400, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caae68ad605e818e2427c4bceae44946cf3}{D\+B\+I\+M\+F.\+N\+O\+G\+R\+I\+P\+P\+E\+R} = 0x0800, 
+\\*
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa6a0a42112c5e439480d113c2e598962f}{D\+B\+I\+M\+F.\+A\+L\+W\+A\+Y\+S\+G\+R\+I\+P\+P\+E\+R} = 0x1000, 
+\hyperlink{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa7337e1cac6be7875a457369fbc13815c}{D\+B\+I\+M\+F.\+N\+O\+M\+A\+R\+G\+I\+N\+S} = 0x2000
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462c}{\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!Band\+Object\+Style@{Band\+Object\+Style}}
+\index{Band\+Object\+Style@{Band\+Object\+Style}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}
+\subsubsection[{Band\+Object\+Style}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Band\+Objects\+Lib.\+Band\+Object\+Style} \+: uint}}\label{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462c}
+
+
+Represents different styles of a band object. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Vertical@{Vertical}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!Vertical@{Vertical}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca06ce2a25e5d12c166a36f654dbea6012}{Vertical}\label{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca06ce2a25e5d12c166a36f654dbea6012}
+}]\index{Horizontal@{Horizontal}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!Horizontal@{Horizontal}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462cac1b5fa03ecdb95d4a45dd1c40b02527f}{Horizontal}\label{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462cac1b5fa03ecdb95d4a45dd1c40b02527f}
+}]\index{Explorer\+Toolbar@{Explorer\+Toolbar}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!Explorer\+Toolbar@{Explorer\+Toolbar}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca6951e77ca95592fbf49fd9ada48203d2}{Explorer\+Toolbar}\label{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca6951e77ca95592fbf49fd9ada48203d2}
+}]\index{Taskbar\+Tool\+Bar@{Taskbar\+Tool\+Bar}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!Taskbar\+Tool\+Bar@{Taskbar\+Tool\+Bar}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca51490cfc82ab8ecb613284aeb75d4e8c}{Taskbar\+Tool\+Bar}\label{namespace_band_objects_lib_a27f3f2f266615c311d6a3ac052c2462ca51490cfc82ab8ecb613284aeb75d4e8c}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683d}{\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!D\+B\+I\+M@{D\+B\+I\+M}}
+\index{D\+B\+I\+M@{D\+B\+I\+M}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}
+\subsubsection[{D\+B\+I\+M}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Band\+Objects\+Lib.\+D\+B\+I\+M} \+: uint}}\label{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+I\+N\+S\+I\+Z\+E@{M\+I\+N\+S\+I\+Z\+E}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!M\+I\+N\+S\+I\+Z\+E@{M\+I\+N\+S\+I\+Z\+E}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683dac5e099554555a9dab0a434effe61372b}{M\+I\+N\+S\+I\+Z\+E}\label{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683dac5e099554555a9dab0a434effe61372b}
+}]\index{M\+A\+X\+S\+I\+Z\+E@{M\+A\+X\+S\+I\+Z\+E}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!M\+A\+X\+S\+I\+Z\+E@{M\+A\+X\+S\+I\+Z\+E}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daaa312581a268989654f7f5c7b023c964}{M\+A\+X\+S\+I\+Z\+E}\label{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daaa312581a268989654f7f5c7b023c964}
+}]\index{I\+N\+T\+E\+G\+R\+A\+L@{I\+N\+T\+E\+G\+R\+A\+L}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!I\+N\+T\+E\+G\+R\+A\+L@{I\+N\+T\+E\+G\+R\+A\+L}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daf36486258ab7a6bde60e99c2b88553d5}{I\+N\+T\+E\+G\+R\+A\+L}\label{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daf36486258ab7a6bde60e99c2b88553d5}
+}]\index{A\+C\+T\+U\+A\+L@{A\+C\+T\+U\+A\+L}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!A\+C\+T\+U\+A\+L@{A\+C\+T\+U\+A\+L}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683da93234b302785a1fd5b0c196dac33d695}{A\+C\+T\+U\+A\+L}\label{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683da93234b302785a1fd5b0c196dac33d695}
+}]\index{T\+I\+T\+L\+E@{T\+I\+T\+L\+E}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!T\+I\+T\+L\+E@{T\+I\+T\+L\+E}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683da6f9dccd85b2e0786c8d522045365eb48}{T\+I\+T\+L\+E}\label{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683da6f9dccd85b2e0786c8d522045365eb48}
+}]\index{M\+O\+D\+E\+F\+L\+A\+G\+S@{M\+O\+D\+E\+F\+L\+A\+G\+S}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!M\+O\+D\+E\+F\+L\+A\+G\+S@{M\+O\+D\+E\+F\+L\+A\+G\+S}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683dada9738da822f67447434d681406b05ec}{M\+O\+D\+E\+F\+L\+A\+G\+S}\label{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683dada9738da822f67447434d681406b05ec}
+}]\index{B\+K\+C\+O\+L\+O\+R@{B\+K\+C\+O\+L\+O\+R}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!B\+K\+C\+O\+L\+O\+R@{B\+K\+C\+O\+L\+O\+R}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daa3fbb4ce45005386c4e9a7495555268a}{B\+K\+C\+O\+L\+O\+R}\label{namespace_band_objects_lib_a50a5414ef82d3f30087a91038378683daa3fbb4ce45005386c4e9a7495555268a}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32ca}{\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!D\+B\+I\+M\+F@{D\+B\+I\+M\+F}}
+\index{D\+B\+I\+M\+F@{D\+B\+I\+M\+F}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}
+\subsubsection[{D\+B\+I\+M\+F}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Band\+Objects\+Lib.\+D\+B\+I\+M\+F} \+: int}}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32ca}
+
+
+
+
+A set of flags that define the mode of operation for the band object. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+R\+M\+A\+L@{N\+O\+R\+M\+A\+L}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!N\+O\+R\+M\+A\+L@{N\+O\+R\+M\+A\+L}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa1e23852820b9154316c7c06e2b7ba051}{N\+O\+R\+M\+A\+L}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa1e23852820b9154316c7c06e2b7ba051}
+}]\index{F\+I\+X\+E\+D@{F\+I\+X\+E\+D}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!F\+I\+X\+E\+D@{F\+I\+X\+E\+D}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caac6e6dc18b53b4c2681394b9d8aefcec7}{F\+I\+X\+E\+D}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caac6e6dc18b53b4c2681394b9d8aefcec7}
+}]\index{F\+I\+X\+E\+D\+B\+M\+P@{F\+I\+X\+E\+D\+B\+M\+P}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!F\+I\+X\+E\+D\+B\+M\+P@{F\+I\+X\+E\+D\+B\+M\+P}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caacb1ba534aeaf3afe2cd475632a1f9428}{F\+I\+X\+E\+D\+B\+M\+P}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caacb1ba534aeaf3afe2cd475632a1f9428}
+}]\index{V\+A\+R\+I\+A\+B\+L\+E\+H\+E\+I\+G\+H\+T@{V\+A\+R\+I\+A\+B\+L\+E\+H\+E\+I\+G\+H\+T}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!V\+A\+R\+I\+A\+B\+L\+E\+H\+E\+I\+G\+H\+T@{V\+A\+R\+I\+A\+B\+L\+E\+H\+E\+I\+G\+H\+T}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caaac0210512520c9ec2b3b24d17ce84d4b}{V\+A\+R\+I\+A\+B\+L\+E\+H\+E\+I\+G\+H\+T}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caaac0210512520c9ec2b3b24d17ce84d4b}
+}]\index{U\+N\+D\+E\+L\+E\+T\+E\+A\+B\+L\+E@{U\+N\+D\+E\+L\+E\+T\+E\+A\+B\+L\+E}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!U\+N\+D\+E\+L\+E\+T\+E\+A\+B\+L\+E@{U\+N\+D\+E\+L\+E\+T\+E\+A\+B\+L\+E}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caab34f6e2e9fd26af68b7e462c49377e32}{U\+N\+D\+E\+L\+E\+T\+E\+A\+B\+L\+E}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caab34f6e2e9fd26af68b7e462c49377e32}
+}]\index{D\+E\+B\+O\+S\+S\+E\+D@{D\+E\+B\+O\+S\+S\+E\+D}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!D\+E\+B\+O\+S\+S\+E\+D@{D\+E\+B\+O\+S\+S\+E\+D}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa3f4ce7dd7df77e99e81db1d7f585c4cc}{D\+E\+B\+O\+S\+S\+E\+D}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa3f4ce7dd7df77e99e81db1d7f585c4cc}
+}]\index{B\+K\+C\+O\+L\+O\+R@{B\+K\+C\+O\+L\+O\+R}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!B\+K\+C\+O\+L\+O\+R@{B\+K\+C\+O\+L\+O\+R}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caaa3fbb4ce45005386c4e9a7495555268a}{B\+K\+C\+O\+L\+O\+R}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caaa3fbb4ce45005386c4e9a7495555268a}
+}]\index{U\+S\+E\+C\+H\+E\+V\+R\+O\+N@{U\+S\+E\+C\+H\+E\+V\+R\+O\+N}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!U\+S\+E\+C\+H\+E\+V\+R\+O\+N@{U\+S\+E\+C\+H\+E\+V\+R\+O\+N}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa61184ef335af146680e65056df57bbe2}{U\+S\+E\+C\+H\+E\+V\+R\+O\+N}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa61184ef335af146680e65056df57bbe2}
+}]\index{B\+R\+E\+A\+K@{B\+R\+E\+A\+K}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!B\+R\+E\+A\+K@{B\+R\+E\+A\+K}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa14d6a3e0201f58bfe7c01e775973e80e}{B\+R\+E\+A\+K}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa14d6a3e0201f58bfe7c01e775973e80e}
+}]\index{A\+D\+D\+T\+O\+F\+R\+O\+N\+T@{A\+D\+D\+T\+O\+F\+R\+O\+N\+T}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!A\+D\+D\+T\+O\+F\+R\+O\+N\+T@{A\+D\+D\+T\+O\+F\+R\+O\+N\+T}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa121b152c338cb89bd35ce3d3323e7bb6}{A\+D\+D\+T\+O\+F\+R\+O\+N\+T}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa121b152c338cb89bd35ce3d3323e7bb6}
+}]\index{T\+O\+P\+A\+L\+I\+G\+N@{T\+O\+P\+A\+L\+I\+G\+N}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!T\+O\+P\+A\+L\+I\+G\+N@{T\+O\+P\+A\+L\+I\+G\+N}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa2890c88d05656ea8f815de9580853af4}{T\+O\+P\+A\+L\+I\+G\+N}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa2890c88d05656ea8f815de9580853af4}
+}]\index{N\+O\+G\+R\+I\+P\+P\+E\+R@{N\+O\+G\+R\+I\+P\+P\+E\+R}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!N\+O\+G\+R\+I\+P\+P\+E\+R@{N\+O\+G\+R\+I\+P\+P\+E\+R}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caae68ad605e818e2427c4bceae44946cf3}{N\+O\+G\+R\+I\+P\+P\+E\+R}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caae68ad605e818e2427c4bceae44946cf3}
+}]\index{A\+L\+W\+A\+Y\+S\+G\+R\+I\+P\+P\+E\+R@{A\+L\+W\+A\+Y\+S\+G\+R\+I\+P\+P\+E\+R}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!A\+L\+W\+A\+Y\+S\+G\+R\+I\+P\+P\+E\+R@{A\+L\+W\+A\+Y\+S\+G\+R\+I\+P\+P\+E\+R}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa6a0a42112c5e439480d113c2e598962f}{A\+L\+W\+A\+Y\+S\+G\+R\+I\+P\+P\+E\+R}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa6a0a42112c5e439480d113c2e598962f}
+}]\index{N\+O\+M\+A\+R\+G\+I\+N\+S@{N\+O\+M\+A\+R\+G\+I\+N\+S}!Band\+Objects\+Lib@{Band\+Objects\+Lib}}\index{Band\+Objects\+Lib@{Band\+Objects\+Lib}!N\+O\+M\+A\+R\+G\+I\+N\+S@{N\+O\+M\+A\+R\+G\+I\+N\+S}}\item[{\em 
+\hypertarget{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa7337e1cac6be7875a457369fbc13815c}{N\+O\+M\+A\+R\+G\+I\+N\+S}\label{namespace_band_objects_lib_a404a4f848406d76dddf221189cea32caa7337e1cac6be7875a457369fbc13815c}
+}]\end{description}
+\end{Desc}

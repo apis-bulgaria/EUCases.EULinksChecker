@@ -1,0 +1,17 @@
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\bin\Release\EULinksCheckerIEAddIn.dll.config
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\bin\Release\EULinksCheckerIEAddIn.dll
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\bin\Release\EULinksCheckerIEAddIn.pdb
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\BandObjectsLib.BandObject.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.EULinksCheckerIEAddIn.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Forms.fCredentials.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Properties.Resources.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Resource.TranslationEN.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Resource.TranslationBG.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Resource.TranslationDE.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Resource.TranslationFR.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Resource.TranslationIT.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EULinksCheckerIEAddIn.csproj.GenerateResource.Cache
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EULinksCheckerIEAddIn.dll
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EULinksCheckerIEAddIn.pdb
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Resources.fInsertLink.resources
+D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\obj\Release\EUCases.Resources.fMessageBox.resources

@@ -1,0 +1,3 @@
+C:\Users\Uzunov\Desktop\Apis Toolbar\SetupProject2\bin\Debug\cab1.cab
+C:\Users\Uzunov\Desktop\Apis Toolbar\SetupProject2\bin\Debug\SetupProject2.msi
+C:\Users\Uzunov\Desktop\Apis Toolbar\SetupProject2\bin\Debug\SetupProject2.wixpdb

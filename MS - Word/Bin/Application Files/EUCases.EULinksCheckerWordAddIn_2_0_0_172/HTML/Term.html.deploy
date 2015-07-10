@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="EUStyle.css"/>
+
+<!-- Include jQuery Library -->
+<!--<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>-->
+<!-- Wire Up Our Magic -->
+<!--<script type='text/javascript'>
+        $(window).load(function () {
+            $(window).scroll(function () {
+                if (($(".container").position().top - $(window).scrollTop()) <= 0) {
+                    $("#topLeft").addClass("fixit");
+                }
+                else {
+                    $("#topLeft").removeClass("fixit");
+                }
+
+            });
+        });
+
+    </script>-->
+</head>
+<body>
+<div id="DivTopGradient"></div>
+<div id="DivTopYellow"><img src="Images/EUCasesLogo.jpg"  alt=""/></div>
+<div id="DivTopBlue"></div>
+<div class="Container"> <span class="Term">'consumer`</span> means any natural person who, in contracts covered by this Directive, is acting for purposes which are outside his trade, business or profession;
+  Whereas the use of means of distance communication must not lead to a reduction in the information provided to the consumer; whereas the information that is required to be sent to the consumer should therefore be determined, whatever the means of communication used; whereas the information supplied must also comply with the other relevant Community rules, in particular those in <a href="">Article 1 of Council Directive 84/450/EEC</a> of 10 September 1984 relating to the approximation of the laws, regulations and administrative provisions of the Member States concerning misleading advertising; </div>
+</div>
+<div id="DivBottomBlueFixed">
+  <p style="font-size:10px; text-align:center"> EUCases establishes a unique Pan-European legal platform – the EUCases Linking Platform, thus providing access and search facilities at European level.<br />
+    This project is partially funded under the FP7 SME Initiative on Analytics (FP7-ICT-2013-SME-DCA), grant agreement n° 611760. </p>
+</div>
+</body>
+</html>
