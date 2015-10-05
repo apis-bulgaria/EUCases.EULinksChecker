@@ -1,0 +1,33 @@
+<script>
+	// Get window
+	var parentwin = external.menuArguments;
+	// Get document
+	var doc = parentwin.document;
+	var event = doc.parentWindow.event;
+	var clickedLink = event.srcElement;
+	// Get selection
+	var sel = doc.selection;
+	//alert(clickedLink);
+	//alert(clickedLink.outerHTML);
+	//clickedLink.outerHTML = clickedLink.innerHTML;
+	//var newContent = doc.body.parentNode.outerHTML;
+	var text = clickedLink.innerText;
+
+	parentwin.location = "http://demo.web.eucases.eu/api/Doc/SearchByTerm/{SearchText}/{Domain}/{LangId}/{SiteLangId}" //"";
+
+	//var xmlhttp = new XMLHttpRequest();
+	//xmlhttp.onreadystatechange = function() {
+	//    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+	//        //document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+	//    }
+	//}
+	//xmlhttp.open("GET",
+    //    "http://demo.web.eucases.eu/api/Doc/SearchByTerm/{SearchText}/{Domain}/{LangId}/{SiteLangId}" + str, true);
+	//xmlhttp.send();
+	
+
+
+
+    //http://demo.web.eucases.eu/api/Doc/SearchByTerm/[FromBody]{SearchText}/{Domain}/{LangId}/{SiteLangId}
+	
+</script>

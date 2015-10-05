@@ -1,7 +1,10 @@
-D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\cab1.cab
+D:\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\cab1.cab
+D:\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\EULinksCheckerIEAddInMsi.msi
+D:\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\EULinksCheckerIEAddInMsi.wixpdb
 obj\Release\Product.wixobj
 obj\Release\EULinksCheckerIEAddInMsi.wixproj.BindContentsFileListnull.txt
 obj\Release\EULinksCheckerIEAddInMsi.wixproj.BindOutputsFileListnull.txt
 obj\Release\EULinksCheckerIEAddInMsi.wixproj.BindBuiltOutputsFileListnull.txt
-D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\EULinksCheckerIEAddInMsi.msi
-D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\EULinksCheckerIEAddInMsi.wixpdb
+E:\msvs2013_prj\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\cab1.cab
+E:\msvs2013_prj\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\EULinksCheckerIEAddInMsi.msi
+E:\msvs2013_prj\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Release\EULinksCheckerIEAddInMsi.wixpdb

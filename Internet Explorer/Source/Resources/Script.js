@@ -34,7 +34,11 @@ EUCASES_TEXTS['bg']['cPlzConfirmRmLnkSel'] = 'Връзките, поставен
 EUCASES_TEXTS['bg']['cSuccess'] = 'Проверката за връзки приключи.';
 EUCASES_TEXTS['bg']['msgLoading'] = 'Зареждане...';
 EUCASES_TEXTS['bg']['msgErrorHintLoading'] = 'Грешка при зареждането! За повече информация: <a href="http://www.help.eucases.eu/ieaddin" target="_blank">www.help.eucases.eu/ieaddin</a>';
-
+EUCASES_TEXTS['bg']['shortCite'] = 'Кратък цитат';
+EUCASES_TEXTS['bg']['fullCite'] = 'Пълен цитат';
+EUCASES_TEXTS['bg']['Close'] = 'Затвори';
+EUCASES_TEXTS['bg']['Copy2Clipbrd'] = 'Копирай';
+EUCASES_TEXTS['bg']['PressCtrlC'] = 'Натиснете Ctrl-C за Copy.';
 
 EUCASES_TEXTS['en'] = [];
 EUCASES_TEXTS['en']['allDocs'] = 'All documents';
@@ -52,6 +56,11 @@ EUCASES_TEXTS['en']['cPlzConfirmRmLnkSel'] = 'The links set by EULinksChecker wi
 EUCASES_TEXTS['en']['cSuccess'] = 'Check for links completed.';
 EUCASES_TEXTS['en']['msgLoading'] = 'Loading...';
 EUCASES_TEXTS['en']['msgErrorHintLoading'] = 'Грешка при зареждането! За повече информация: <a href="http://www.help.eucases.eu/ieaddin" target="_blank">www.help.eucases.eu/ieaddin</a>';
+EUCASES_TEXTS['en']['shortCite'] = 'Short citation';
+EUCASES_TEXTS['en']['fullCite'] = 'Full citation';
+EUCASES_TEXTS['en']['Close'] = 'Close';
+EUCASES_TEXTS['en']['Copy2Clipbrd'] = 'Copy';
+EUCASES_TEXTS['en']['PressCtrlC'] = 'Press Ctrl-C to Copy.';
 
 EUCASES_TEXTS['de'] = [];
 EUCASES_TEXTS['de']['allDocs'] = 'Alle Dokumente';
@@ -69,6 +78,11 @@ EUCASES_TEXTS['de']['cPlzConfirmRmLnkSel'] = 'Die vom EULinksChecker gesetzten L
 EUCASES_TEXTS['de']['cSuccess'] = 'Überprüfung für Links abgeschlossen.';
 EUCASES_TEXTS['de']['msgLoading'] = 'Loading...';
 EUCASES_TEXTS['de']['msgErrorHintLoading'] = 'Грешка при зареждането! За повече информация: <a href="http://www.help.eucases.eu/ieaddin" target="_blank">www.help.eucases.eu/ieaddin</a>';
+EUCASES_TEXTS['de']['shortCite'] = 'Kurzes Zitat';
+EUCASES_TEXTS['de']['fullCite'] = 'Vollständiges Zitat';
+EUCASES_TEXTS['de']['Close'] = 'Schließen';
+EUCASES_TEXTS['de']['Copy2Clipbrd'] = 'Kopieren';
+EUCASES_TEXTS['de']['PressCtrlC'] = 'Drücken Sie Strg-C zum Kopieren.';
 
 EUCASES_TEXTS['fr'] = [];
 EUCASES_TEXTS['fr']['allDocs'] = 'Tous les documents';
@@ -86,6 +100,11 @@ EUCASES_TEXTS['fr']['cPlzConfirmRmLnkSel'] = 'Les liens établis par EULinksChec
 EUCASES_TEXTS['fr']['cSuccess'] = 'La vérification des liens est terminée.';
 EUCASES_TEXTS['fr']['msgLoading'] = 'Loading...';
 EUCASES_TEXTS['fr']['msgErrorHintLoading'] = 'Грешка при зареждането! За повече информация: <a href="http://www.help.eucases.eu/ieaddin" target="_blank">www.help.eucases.eu/ieaddin</a>';
+EUCASES_TEXTS['fr']['shortCite'] = 'Courte citation';
+EUCASES_TEXTS['fr']['fullCite'] = 'Citation complète';
+EUCASES_TEXTS['fr']['Close'] = 'Fermer';
+EUCASES_TEXTS['fr']['Copy2Clipbrd'] = 'Copier';
+EUCASES_TEXTS['fr']['PressCtrlC'] = 'Appuyez sur Ctrl-C pour copier.';
 
 EUCASES_TEXTS['it'] = [];
 EUCASES_TEXTS['it']['allDocs'] = 'Tutti i documenti';
@@ -103,6 +122,11 @@ EUCASES_TEXTS['it']['cPlzConfirmRmLnkSel'] = 'I collegamenti messi dal EULinksCh
 EUCASES_TEXTS['it']['cSuccess'] = 'Verificazione dei collegamenti compiuta.';
 EUCASES_TEXTS['it']['msgLoading'] = 'Loading...';
 EUCASES_TEXTS['it']['msgErrorHintLoading'] = 'Грешка при зареждането! За повече информация: <a href="http://www.help.eucases.eu/ieaddin" target="_blank">www.help.eucases.eu/ieaddin</a>';
+EUCASES_TEXTS['it']['shortCite'] = 'Citazione breve';
+EUCASES_TEXTS['it']['fullCite'] = 'Citazione completa';
+EUCASES_TEXTS['it']['Close'] = 'Chiudi';
+EUCASES_TEXTS['it']['Copy2Clipbrd'] = 'Copia';
+EUCASES_TEXTS['it']['PressCtrlC'] = 'Premere Ctrl-C per copiare.';
 
 function eucasesShowHint(caller, ev, celex, toPar, uiLangId, langId) {
     var rect = caller.getBoundingClientRect();
@@ -123,10 +147,10 @@ function eucasesShowHint(caller, ev, celex, toPar, uiLangId, langId) {
     var ajaxLnk = '';
     if (toPar && toPar != '') {
         rf = /*'#' + */toPar;
-        ajaxLnk = 'http://demo.eurocases.eu/api/Doc/ParHint/' + langId + '/' + EUCASES_LANGS_NUMS[uiLangId] + '/' + celex + '/' + rf;
+        ajaxLnk = 'http://app.eurocases.eu/api/Doc/ParHint/' + langId + '/' + EUCASES_LANGS_NUMS[uiLangId] + '/' + celex + '/' + rf;
     }
     else {
-        ajaxLnk = 'http://demo.eurocases.eu/api/Doc/ParHint/' + langId + '/' + EUCASES_LANGS_NUMS[uiLangId] + '/' + celex;
+        ajaxLnk = 'http://app.eurocases.eu/api/Doc/ParHint/' + langId + '/' + EUCASES_LANGS_NUMS[uiLangId] + '/' + celex;
     }
     hintEl.innerHTML = '<span style="margin-left: 10px;">' + EUCASES_TEXTS[EUCASES_UI_LANG]['msgLoading'] + '</span>';
 
@@ -146,9 +170,10 @@ function eucasesShowHint(caller, ev, celex, toPar, uiLangId, langId) {
 
     xmlhttp.open("GET", ajaxLnk, true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-    xmlhttp.setRequestHeader("UI-Language", EUCASES_UI_LANG);
-    xmlhttp.send(document.body.innerHTML);
+    //xmlhttp.setRequestHeader("UI-Language", EUCASES_UI_LANG);
+    xmlhttp.setRequestHeader("Access-Control-Request-Method", "GET");
+    xmlhttp.setRequestHeader("Access-Control-Request-Headers", "*");
+    xmlhttp.send();
     // End of hint ajax
 
     if (hintEl.style.display != 'block') {
@@ -187,7 +212,155 @@ function eucasesShowHint(caller, ev, celex, toPar, uiLangId, langId) {
 
     caller.onmouseout = closeHintInterval;
 }
+function _a() {
+    if (!EUCASES_UI_LANG) EUCASES_UI_LANG = 'en';
+    alert(EUCASES_TEXTS[EUCASES_UI_LANG]['PressCtrlC'])
+}
+function _Sel() {
+    try {
+        var x = document.getElementById('DlgCiteTxtArea'); if (!x) return;
+        x.select();
+        if (!document.execCommand('copy', false, null)) _a()
+    } catch (e) { _a() }
+}
+function _Cls() { document.getElementById('DlgCiteDivWrp').style.display = 'none' }
+function mkCite() {
+    var r = document.getElementById('DlgCiteDivWrp');
+    if (!r) {
+        r = document.createElement('div');
+        r.id = 'DlgCiteDivWrp';
+        with (r.style) {
+            position = 'fixed';
+            width = '400px';
+            height = '200px';
+            left = '200px';
+            top = '200px';
+            visibility = 'visible';
+            display = 'block';
+            border = '1px 1px 1px 1px solid black';
+            zIndex = 9999
+        }
+        var a, t = document.createElement('div');
+        t.id = 'DlgCiteTitle';
+        with (t.style) {
+			fontWeight='bold';
+			marginTop='2px';
+            textAlign = 'center';
+            position = 'absolute';
+            width = '100%';
+            height = '30px';
+            left = '0px';
+            top = '0px';
+            backgroundColor = '#e0e0e0';
+            visibility = 'visible';
+            display = 'block';
+            zIndex = 1000000
+        }
+        a = document.createElement('div');
+        a.id = 'DlgCiteTitleCloseX';
+        a.innerHTML = '&nbsp;X';
+        a.onclick = _Cls;
+        a.title = 'Close';
+        with (a.style) {
+            position = 'absolute';
+            width = '17px';
+            height = '16px';
+            left = '380px';
+            top = '7px';
+            cursor = 'pointer';
+            backgroundColor = '#a0a0a0';
+            visibility = 'visible';
+            display = 'block';
+            zIndex = 1000001
+        }
+        r.appendChild(a);
+        r.appendChild(t);
 
+        t = document.createElement('div');
+        t.id = 'DlgCiteDiv';
+        with (t.style) {
+            position = 'absolute';
+            width = '100%';
+            height = '90%';
+            left = '0px';
+            top = '20px';
+            visibility = 'visible';
+            display = 'block'
+        }
+        a = document.createElement('textarea');
+        a.id = 'DlgCiteTxtArea';
+		a.readOnly=true;
+        //a.rows=12;
+        //a.cols=60
+        with (a.style) {
+            position = 'absolute';
+            width = '394px';
+            height = '94%';
+            top = '8px';
+            left = '0px';
+            resize = 'none';
+            visibility = 'visible';
+            display = 'block'
+        }
+        t.appendChild(a);
+        r.appendChild(t);
+
+        t = document.createElement('div');
+        t.id = 'DlgCiteDivFoot';
+        with (t.style) {
+            //align='center';
+            margin = '0px auto';
+            position = 'absolute';
+            width = '100%';
+            height = '30px';
+            left = '0px';
+            top = '200px';
+            backgroundColor = '#b0b0b0';
+            border = '1px 1px 0px 1px solid black';
+            visibility = 'visible';
+            display = 'block'
+        }
+
+        a = document.createElement('input');
+        a.id = 'DlgCiteCopy2Clipboard';
+        a.type = 'button';
+        with (a.style) { marginTop = '4px'; marginRight = '10px'; marginLeft = '110px' }
+        a.onclick = _Sel;
+        t.appendChild(a);
+
+        a = document.createElement('input');
+        a.id = 'DlgCiteClose';
+        a.type = 'button';
+        with (a.style) { marginTop = '4px'; marginLeft = '10px' }
+        a.onclick = _Cls;
+        t.appendChild(a);
+        r.appendChild(t);
+        document.body.appendChild(r)
+    }
+    return r
+}
+function _ShCite(c, t, l) {
+    l = EUCASES_LANGS_NUMS[l];
+    t = t == 1 || t == '1' ? 'shortCite' : 'fullCite';
+    t = EUCASES_TEXTS[l][t];
+    var r = mkCite(); if (!r) return;
+    document.getElementById('DlgCiteTitle').innerHTML = t;
+    document.getElementById('DlgCiteTxtArea').innerHTML = c;
+    document.getElementById('DlgCiteCopy2Clipboard').value = EUCASES_TEXTS[l]['Copy2Clipbrd'];
+    document.getElementById('DlgCiteTitleCloseX').title = document.getElementById('DlgCiteClose').value = EUCASES_TEXTS[l]['Close'];
+    with (r.style) { zIndex = 999999; display = 'block'; visibility = 'visible' }
+}
+function _cite(l, c, t) {
+    var u = 'http://app.eurocases.eu/api/Doc/Cite/' + l + '/' + c + '/' + t, x = new XMLHttpRequest();
+    x.onreadystatechange = function () {
+        if (x.readyState == 4 && x.status == 200) {
+            eval('var o=' + x.responseText);
+            _ShCite(o.Text, t, l)
+        }
+    };
+    x.open('GET', u, true);
+    x.send(null)
+}
 function eucasesShowContext(caller, ev, uiLang, celex, toPar, docLang) {
     ev.preventDefault();
     ev.stopPropagation();
@@ -197,6 +370,7 @@ function eucasesShowContext(caller, ev, uiLang, celex, toPar, docLang) {
     }
 
     EUCASES_CONTEXT_CALLER = caller;
+    var intuiLang = EUCASES_LANGS_NUMS[uiLang];
 
     function hideUl() {
         var el = document.getElementById('eucasesTempContextMenu');
@@ -213,7 +387,7 @@ function eucasesShowContext(caller, ev, uiLang, celex, toPar, docLang) {
         var docnumber = '';
         var callerLinkSplitted = caller.href.split('/');
 
-        window.open('http://demo.eurocases.eu/api/Doc/DocInLinks/'
+        window.open('http://app.eurocases.eu/api/Doc/DocInLinks/'
             + domain + '/'
             + docLang + '/'
             + EUCASES_LANGS_NUMS[uiLang]
@@ -241,6 +415,8 @@ function eucasesShowContext(caller, ev, uiLang, celex, toPar, docLang) {
     function openNatCaseLaw() {
         openLinkByDomain('natcl');
     }
+    function _shortCite() { _cite(intuiLang, celex, 1) }
+    function _fullCite() { _cite(intuiLang, celex, 2) }
 
     var ul = null;
     if (!document.getElementById('eucasesTempContextMenu')) {
@@ -248,35 +424,45 @@ function eucasesShowContext(caller, ev, uiLang, celex, toPar, docLang) {
 
         // All documents
         var allDocs = document.createElement('li');
-        allDocs.innerText = EUCASES_TEXTS[uiLang]['allDocs'];
+        allDocs.innerHTML = EUCASES_TEXTS[uiLang]['allDocs'];
         allDocs.onclick = openAllDocs;
         ul.appendChild(allDocs);
         // EU Legislation
         var euLegislation = document.createElement('li');
-        euLegislation.innerText = EUCASES_TEXTS[uiLang]['euLegislation'];
+        euLegislation.innerHTML = EUCASES_TEXTS[uiLang]['euLegislation'];
         euLegislation.onclick = openEuLegislation;
         ul.appendChild(euLegislation);
         // EU case law
         var euCaseLaw = document.createElement('li');
-        euCaseLaw.innerText = EUCASES_TEXTS[uiLang]['euCaseLaw']; //"EU case law";
+        euCaseLaw.innerHTML = EUCASES_TEXTS[uiLang]['euCaseLaw']; //"EU case law";
         euCaseLaw.onclick = openEuCaseLaw;
         ul.appendChild(euCaseLaw);
         // National legislation
         var natLegislation = document.createElement('li');
-        natLegislation.innerText = EUCASES_TEXTS[uiLang]['natLegislation'];//"National legislation";
+        natLegislation.innerHTML = EUCASES_TEXTS[uiLang]['natLegislation'];//"National legislation";
         natLegislation.onclick = openNatLegislation;
         ul.appendChild(natLegislation);
         // National case law
         var natCaseLaw = document.createElement('li');
-        natCaseLaw.innerText = EUCASES_TEXTS[uiLang]['natCaseLaw'];//"National case law";
+        natCaseLaw.innerHTML = EUCASES_TEXTS[uiLang]['natCaseLaw'];//"National case law";
         natCaseLaw.onclick = openNatCaseLaw;
         ul.appendChild(natCaseLaw);
 
         // Remove link
         var removeLink = document.createElement('li');
-        removeLink.innerText = EUCASES_TEXTS[uiLang]['removeLink'];//"National case law";
+        removeLink.innerHTML = EUCASES_TEXTS[uiLang]['removeLink'];//"National case law";
         removeLink.onclick = removeLnk;
         ul.appendChild(removeLink);
+        //ShortCite
+        var shortCite = document.createElement('li');
+        shortCite.innerHTML = EUCASES_TEXTS[uiLang]['shortCite'];//"shortCite";
+        shortCite.onclick = _shortCite;
+        ul.appendChild(shortCite);
+        //FullCite
+        var fullCite = document.createElement('li');
+        fullCite.innerHTML = EUCASES_TEXTS[uiLang]['fullCite'];//"fullCite";
+        fullCite.onclick = _fullCite;
+        ul.appendChild(fullCite);
 
         ul.id = "eucasesTempContextMenu";
         if (document.body.addEventListener) {
@@ -481,7 +667,7 @@ function eucasesConceptShowContext(caller, ev, uiLang, docLang, xmlId) {
     }
 
     function openLinkByDomain(domain) {
-        window.open('http://demo.eurocases.eu/api/Doc/SearchByXmlId/?xmlId=' + xmlId + '&domain=' + domain + '&langId=' + docLang + '&siteLangId=' + uiLang);
+        window.open('http://app.eurocases.eu/api/Doc/SearchByXmlId/?xmlId=' + xmlId + '&domain=' + domain + '&langId=' + docLang + '&siteLangId=' + uiLang);
     }
 
     function openAllDocs() {
@@ -510,33 +696,33 @@ function eucasesConceptShowContext(caller, ev, uiLang, docLang, xmlId) {
 
         // All documents
         var allDocs = document.createElement('li');
-        allDocs.innerText = EUCASES_TEXTS[lang]['allDocs'];
+        allDocs.innerHTML = EUCASES_TEXTS[lang]['allDocs'];
         allDocs.onclick = openAllDocs;
         ul.appendChild(allDocs);
         // EU Legislation
         var euLegislation = document.createElement('li');
-        euLegislation.innerText = EUCASES_TEXTS[lang]['euLegislation'];
+        euLegislation.innerHTML = EUCASES_TEXTS[lang]['euLegislation'];
         euLegislation.onclick = openEuLegislation;
         ul.appendChild(euLegislation);
         // EU case law
         var euCaseLaw = document.createElement('li');
-        euCaseLaw.innerText = EUCASES_TEXTS[lang]['euCaseLaw']; //"EU case law";
+        euCaseLaw.innerHTML = EUCASES_TEXTS[lang]['euCaseLaw']; //"EU case law";
         euCaseLaw.onclick = openEuCaseLaw;
         ul.appendChild(euCaseLaw);
         // National legislation
         var natLegislation = document.createElement('li');
-        natLegislation.innerText = EUCASES_TEXTS[lang]['natLegislation'];//"National legislation";
+        natLegislation.innerHTML = EUCASES_TEXTS[lang]['natLegislation'];//"National legislation";
         natLegislation.onclick = openNatLegislation;
         ul.appendChild(natLegislation);
         // National case law
         var natCaseLaw = document.createElement('li');
-        natCaseLaw.innerText = EUCASES_TEXTS[lang]['natCaseLaw'];//"National case law";
+        natCaseLaw.innerHTML = EUCASES_TEXTS[lang]['natCaseLaw'];//"National case law";
         natCaseLaw.onclick = openNatCaseLaw;
         ul.appendChild(natCaseLaw);
 
         // Remove link
         var removeLink = document.createElement('li');
-        removeLink.innerText = EUCASES_TEXTS[lang]['removeLink'];//"National case law";
+        removeLink.innerHTML = EUCASES_TEXTS[lang]['removeLink'];//"National case law";
         removeLink.onclick = removeTerm;
         ul.appendChild(removeLink);
 

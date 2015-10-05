@@ -46,7 +46,7 @@
     <PublishUrl>c:\publ\eulinkscheckerwordaddin\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>2.0.0.172</ApplicationVersion>
+    <ApplicationVersion>2.0.0.181</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -223,6 +223,12 @@
     <Compile Include="Forms\fCredentials.Designer.cs">
       <DependentUpon>fCredentials.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fCite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fCite.Designer.cs">
+      <DependentUpon>fCite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmTM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +277,9 @@
     </Compile>
     <EmbeddedResource Include="EULCRibbon.resx">
       <DependentUpon>EULCRibbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fCite.resx">
+      <DependentUpon>fCite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fCredentials.resx">
       <DependentUpon>fCredentials.cs</DependentUpon>

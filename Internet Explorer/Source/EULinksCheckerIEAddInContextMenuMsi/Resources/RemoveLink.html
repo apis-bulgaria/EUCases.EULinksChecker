@@ -1,0 +1,12 @@
+<script>
+	//Get window
+	var parentwin = external.menuArguments;
+	//Get document
+	var doc = parentwin.document;
+	var event = doc.parentWindow.event;
+	var clickedLink = event.srcElement;
+	//Get selection
+	var sel = doc.selection;
+    //Remove selected link and the parent tag (links should be with the following pattern "<...><a ...>link content</a></...>")
+	clickedLink.parentNode.outerHTML = clickedLink.innerText;
+</script>

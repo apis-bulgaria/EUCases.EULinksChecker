@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EULinksCheckerIEAddIn", "EULinksCheckerIEAddIn.csproj", "{BA46DE94-AD3A-4714-8C1F-9652CD8931B8}"
 EndProject
@@ -17,18 +17,24 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "EULinksCheckerIEAddInBoostr
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
+		SccNumberOfProjects = 3
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = http://192.168.2.16:8080/tfs/apiscollection
+		SccProjectUniqueName0 = EULinksCheckerIEAddIn.csproj
+		SccProjectName0 = .
+		SccAuxPath0 = http://192.168.2.16:8080/tfs/apiscollection
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = Bootstrapper1\\EULinksCheckerIEAddInBoostrapperInstaller.wixproj
-		SccProjectName1 = Bootstrapper1
-		SccLocalPath1 = Bootstrapper1
-		SccProjectUniqueName2 = EULinksCheckerIEAddIn.csproj
-		SccLocalPath2 = .
-		SccProjectUniqueName3 = SetupProject2\\EULinksCheckerIEAddInMsi.wixproj
-		SccProjectName3 = SetupProject2
-		SccLocalPath3 = SetupProject2
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = SetupProject2\\EULinksCheckerIEAddInMsi.wixproj
+		SccProjectName1 = SetupProject2
+		SccAuxPath1 = http://192.168.2.16:8080/tfs/apiscollection
+		SccLocalPath1 = SetupProject2
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = Bootstrapper1\\EULinksCheckerIEAddInBoostrapperInstaller.wixproj
+		SccProjectName2 = Bootstrapper1
+		SccAuxPath2 = http://192.168.2.16:8080/tfs/apiscollection
+		SccLocalPath2 = Bootstrapper1
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU

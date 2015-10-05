@@ -249,4 +249,22 @@
   <data name="cWorking" xml:space="preserve">
     <value>Проверяване за връзки...</value>
   </data>
+  <data name="cm_LongCite" xml:space="preserve">
+    <value>Пълен цитат</value>
+  </data>
+  <data name="cm_ShortCite" xml:space="preserve">
+    <value>Кратък цитат</value>
+  </data>
+  <data name="cCaseLaw" xml:space="preserve">
+    <value>Съдебна практика</value>
+  </data>
+  <data name="cLegislation" xml:space="preserve">
+    <value>Законодателство</value>
+  </data>
+  <data name="cClose" xml:space="preserve">
+    <value>Затвори</value>
+  </data>
+  <data name="cCopy" xml:space="preserve">
+    <value>Копирай</value>
+  </data>
 </root>

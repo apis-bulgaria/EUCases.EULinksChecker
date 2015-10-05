@@ -1,0 +1,9 @@
+content   MNU                content/
+skin      MNU  classic/1.0   skin/
+locale    MNU  en-US         locale/en-US/
+locale    MNU  bg-BG         locale/bg-BG/
+locale    MNU  fr-FR         locale/fr-FR/
+locale    MNU  de-DE         locale/de-DE/
+locale    MNU  it-IT         locale/it-IT/
+
+overlay chrome://browser/content/browser.xul  chrome://MNU/content/o.xul

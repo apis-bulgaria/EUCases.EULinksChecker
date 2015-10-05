@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="4C8EFB6C-BA11-438B-8DD6-ACA96D325A4A" Name="EULinksCheckerIEAddInContextMenuMsi" Language="1033" Version="1.0.0.0" Manufacturer="Apis" UpgradeCode="959c5fcf-b76c-4fb0-b974-cd4af0bfb90d">
+    <Package InstallerVersion="200" Compressed="yes" InstallPrivileges="elevated"/>
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of EULinksCheckerIEAddInContextMenuMsi is already installed." />
+    <MediaTemplate />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="APPLICATIONROOTDIRECTORY" Name="EULinksCheckerIEAddInContextMenuMsi"/>
+      </Directory>
+    </Directory>
+    <DirectoryRef Id="APPLICATIONROOTDIRECTORY">
+      <!-- All documents -->
+      <Component Id="AllDocuments.html" Guid="{480BC982-F7E3-44C7-ABC0-39A4838CBB43}">
+        <File Id="AllDocuments.html" Source="Resources\AllDocuments.html"/>
+      </Component>
+      <Component Id="AllDocumentsReg" Guid="{662A09F9-07E1-4F99-B0B4-D22E476DB867}">
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\All Documents"  Value="[APPLICATIONROOTDIRECTORY]AllDocuments.html" Type="string" />
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\All Documents" Name="Contexts" Value="32" Type="integer" />
+      </Component>
+      <!-- EU legislation context menu entry -->
+      <Component Id="EULegislation.html" Guid="{BCDAE7D7-9CF2-44DF-87D0-F957758E672E}">
+        <File Id="EULegislation.html" Source="Resources\EULegislation.html"/>
+      </Component>
+      <Component Id="EULegislationReg" Guid="{30AE08D4-0A96-4F69-9FDD-CA71BD9EB32E}">        
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\EU Legislation"  Value="[APPLICATIONROOTDIRECTORY]EULegislation.html" Type="string" />
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\EU Legislation" Name="Contexts" Value="32" Type="integer" />
+      </Component>
+      <!-- EU case law context menu entry -->
+      <Component Id="EUCaseLaw.html" Guid="{3E3BF5E7-0440-4519-91A0-5313387A900B}">
+        <File Id="EUCaseLaw.html" Source="Resources\EUCaseLaw.html"/>
+      </Component>
+      <Component Id="EUCaseLawReg" Guid="{D7783B50-D05D-4B06-93AE-28F635DA7D58}">
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\EU Case Law"  Value="[APPLICATIONROOTDIRECTORY]EUCaseLaw.html" Type="string" />
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\EU Case Law" Name="Contexts" Value="32" Type="integer" />
+      </Component>
+      <!-- National legislation context menu entry -->
+      <Component Id="NationalLegislation.html" Guid="{819F2F54-A782-4B8F-84C2-F25D1E3ABDA2}">
+        <File Id="NationalLegislation.html" Source="Resources\NationalLegislation.html"/>
+      </Component>
+      <Component Id="NationalLegislationReg" Guid="{E331F3CD-A376-4708-A44A-4BCD6EF932DF}">        
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\National Legislation"  Value="[APPLICATIONROOTDIRECTORY]NationalLegislation.html" Type="string" />
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\National Legislation" Name="Contexts" Value="32" Type="integer" />
+      </Component>
+      <!-- National case law context menu entry -->
+      <Component Id="NationalCaseLaw.html" Guid="{542BC611-5BA6-4AD2-944E-97318CC52C4D}">
+        <File Id="NationalCaseLaw.html" Source="Resources\NationalCaseLaw.html"/>
+      </Component>
+      <Component Id="NationalCaseLawReg" Guid="{DE7DA89A-14B9-467B-88C2-BC1249319803}">
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\National Case Law"  Value="[APPLICATIONROOTDIRECTORY]NationalCaseLaw.html" Type="string" />
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\National Case Law" Name="Contexts" Value="32" Type="integer" />
+      </Component>
+      <!-- Remove link context menu entry -->
+      <Component Id="RemoveLink.html" Guid="{11C9CE49-6460-46D4-9145-44AEE5E07C54}">
+        <File Id="RemoveLink.html" Source="Resources\RemoveLink.html"/>
+      </Component>
+      <Component Id="RemoveLinkReg" Guid="{9B24F888-AB02-49A5-A1F9-5C127A68DFBB}">        
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\Remove Link"  Value="[APPLICATIONROOTDIRECTORY]RemoveLink.html" Type="string" />
+        <RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Internet Explorer\MenuExt\Remove Link" Name="Contexts" Value="32" Type="integer" />
+      </Component>
+    </DirectoryRef>
+    <Feature Id="MainApplication" Title="Main Application" Level="1">
+      <!-- All documents -->
+      <ComponentRef Id="AllDocuments.html" />
+      <ComponentRef Id="AllDocumentsReg" />
+      <!-- EU Legislation -->
+      <ComponentRef Id="EULegislation.html" />
+      <ComponentRef Id="EULegislationReg" />
+      <!-- EU Case Law -->
+      <ComponentRef Id="EUCaseLaw.html" />
+      <ComponentRef Id="EUCaseLawReg" />
+      <!-- National Legislation -->
+      <ComponentRef Id="NationalLegislation.html" />
+      <ComponentRef Id="NationalLegislationReg" />
+      <!-- National Case Law -->
+      <ComponentRef Id="NationalCaseLaw.html" />
+      <ComponentRef Id="NationalCaseLawReg" />
+      <!-- Remove link -->
+      <ComponentRef Id="RemoveLink.html" />
+      <ComponentRef Id="RemoveLinkReg" />      
+    </Feature>
+  </Product>
+</Wix>

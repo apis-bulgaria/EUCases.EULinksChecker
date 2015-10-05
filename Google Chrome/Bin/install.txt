@@ -1,0 +1,5 @@
+The installation of the EULinksChecker can be done by downloading it from Chrome Web Store and adding it to Chrome extensions.  
+To this end please perform the following sequence of steps:
+1. Open Settings -> Extensions and then click on “Get more extensions”
+2. Type “eulinkschecker” in the search box of Chrome Web Store
+3. Click on “Add to Chrome” button and confirm.

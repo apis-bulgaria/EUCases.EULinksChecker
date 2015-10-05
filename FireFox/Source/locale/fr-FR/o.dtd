@@ -1,0 +1,21 @@
+<!ENTITY MNU.hello.label            "Hello, world!">
+<!ENTITY MNU.helloMenu.accesskey    "l">
+<!ENTITY MNU.helloItem.accesskey    "З">
+<!ENTITY MNU.tools.label            "Tool">
+<!ENTITY MNU.toolsMenu.accesskey    "И">
+<!ENTITY MNU.tools.label2           "Tool2">
+<!ENTITY MNU.toolsMenu.accesskey2   "Н">
+<!ENTITY MNU.EUL.label              "EULinksChecker">
+<!ENTITY MNU.EUL.accesskey          "z">
+<!ENTITY MNU.EUL.item1.label        "EUL1">
+<!ENTITY MNU.EUL.item1.accesskey    "1">
+<!ENTITY MNU.EUL.item2.label        "EUL2">
+<!ENTITY MNU.EUL.item2.accesskey    "1">
+<!ENTITY MNU.RemoveLink             "Supprimer le lien">
+<!ENTITY MNU.RemoveLinksSel         "Supprimer les liens de la selection">
+<!ENTITY MNU.InsertLink             "Insérer un lien">
+<!ENTITY MNU.Check4Links            "Vérifier les liens">
+<!ENTITY MNU.RmAllLinks             "Supprimer les liens">
+<!ENTITY MNU.RmLinksSel             "Supprimer les liens de la selection">
+<!ENTITY MNU.Xml                    "Enregistrer le texte au format XML">
+<!ENTITY MNU.Settings               "Paramètres">

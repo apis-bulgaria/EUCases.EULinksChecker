@@ -8,6 +8,8 @@
 #undef with_LinkHint//20150616
 #undef with_SvcRef
 #define with_async
+#define with_cite
+//#define test_cite
 //#define with_LinkCache
 //#define comm_v1
 //#undef comm_v1
@@ -117,6 +119,10 @@ namespace EUCases.EULinksCheckerWordAddIn
             cm_InsertLink = "Insert Link",
             cm_Text = "Text",
             cm_RemoveLink = "Remove Link",
+#if with_cite
+            cm_ShortCite="Short cite",
+            cm_LongCite="Long cite",
+#endif//with_cite
 #if with_ShowToolTip
  cm_ShowToolTip = "Show ToolTip",
 #endif
@@ -130,6 +136,10 @@ namespace EUCases.EULinksCheckerWordAddIn
             cm_Credentials = "Credentials",
             ci_InsertLink = cm_InsertLink,
             ci_RemoveLink = cm_RemoveLink,
+#if with_cite
+            ci_ShortCite=cm_ShortCite,
+            ci_LongCite=cm_LongCite,
+#endif//with_cite
 #if with_ShowToolTip
  ci_ShowToolTip = cm_ShowToolTip,
 #endif
@@ -215,6 +225,49 @@ namespace EUCases.EULinksCheckerWordAddIn
                 return MkSMenu(_HLCM, Resources.Resource.cm_RemoveLink, ci_RemoveLink, bRemoveLink_Click);
             }
         }
+#if with_cite
+        private Office.CommandBarButton _ShortCite
+        {
+            get
+            {
+                return MkSMenu(_HLCM, Resources.Resource.cm_ShortCite, ci_ShortCite, bShortCite_Click);
+            }
+        }
+        private Office.CommandBarButton _LongCite
+        {
+            get
+            {
+                return MkSMenu(_HLCM, Resources.Resource.cm_LongCite, ci_LongCite, bLongCite_Click);
+            }
+        }
+        /*
+        private Office.CommandBarButton _LegShortCite
+        {
+            get
+            {
+                return MkSMenu(_HLCM, Resources.Resource.cm_LegShortCite, ci_LegShortCite, bLegShortCite_Click);
+            }
+        }
+        private Office.CommandBarButton _LegLongCite{
+            get
+            {
+                return MkSMenu(_HLCM, Resources.Resource.cm_LegLongCite, ci_LegLongCite, bLegLongCite_Click);
+            }
+        }
+        private Office.CommandBarButton _CaseShortCite{
+            get
+            {
+                return MkSMenu(_HLCM, Resources.Resource.cm_CaseShortCite, ci_CaseShortCite, bCaseShortCite_Click);
+            }
+        }
+        private Office.CommandBarButton _CaseLongCite {
+            get
+            {
+                return MkSMenu(_HLCM, Resources.Resource.cm_CaseLongCite, ci_CaseLongCite, bCaseLongCite_Click);
+            }
+        }
+        */
+#endif//with_cite
 #if with_ShowToolTip
         private Office.CommandBarButton _ShowToolTip
         {
@@ -762,6 +815,7 @@ namespace EUCases.EULinksCheckerWordAddIn
         /// Process Indicator top-most form
         /// </summary>
         public EUCases.EULinksCheckerWordAddIn.Forms.frmTM fBusyTM = null;//fBusyInit();
+        public EUCases.EULinksCheckerWordAddIn.Forms.fCite CITE = null;//fCiteInit();
         /// <summary>
         /// Initializer procedure for the Process indicator
         /// </summary>
@@ -772,6 +826,11 @@ namespace EUCases.EULinksCheckerWordAddIn
             fBusyTM.Visible = false;
             //timer.Elapsed += OnTick;
             //timer.Enabled = true;
+        }
+        public void fCiteInit() { 
+            if (CITE != null) return;
+            CITE = new Forms.fCite();
+            CITE.Visible = false;
         }
         /*private void OnTick(object source, ElapsedEventArgs e)
         {
@@ -853,6 +912,7 @@ namespace EUCases.EULinksCheckerWordAddIn
             DisableSplashScreen();
             SetUtf8();
             fBusyInit();
+            fCiteInit();
             //'HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\General','DisableBootToOfficeStart'=(DWORD)1
             InitRes();
 #if with_Dict
@@ -1153,6 +1213,18 @@ namespace EUCases.EULinksCheckerWordAddIn
             Ctrl.Click -= bRemoveLink_Click;
             Remove1();
         }
+#if with_cite
+        void bShortCite_Click(Office.CommandBarButton Ctrl, ref bool CancelDefault)
+        {
+            Ctrl.Click -= bRemoveLink_Click;
+            ShortCite();
+        }
+        void bLongCite_Click(Office.CommandBarButton Ctrl, ref bool CancelDefault)
+        {
+            Ctrl.Click -= bRemoveLink_Click;
+            LongCite();
+        }
+#endif//with_cite
 #if with_ShowToolTip
         void bShowToolTip_Click(Office.CommandBarButton Ctrl, ref bool CancelDefault)
         {
@@ -1290,6 +1362,10 @@ namespace EUCases.EULinksCheckerWordAddIn
             var hl = GetCurrentHyperlink();
             rUrl r = GetRUrl(hl);
             bool IsHL = hl != null;
+#if with_cite
+            _ShortCite.Visible = IsHL && !r.IsTerm;
+            _LongCite.Visible = IsHL && !r.IsTerm;
+#endif//with_cite
             _InsertLink.Visible = HasSelection && !IsHL;
             _RemoveLink.Visible = IsHL;
 #if with_ShowToolTip
@@ -1445,7 +1521,7 @@ namespace EUCases.EULinksCheckerWordAddIn
                 langid = _langid;
                 art = x.ReferrenceInfo;
                 MkUrl();
-                //url = "http://demo.eurocases.eu/api/Doc/ParHint/" + langid + "/" + celex;
+                //url = "http://app.eurocases.eu/api/Doc/ParHint/" + langid + "/" + celex;
                 //if (art != "") url += "/" + art;
                 url1 = "http://eur-lex.europa.eu/legal-content/" + lang + "/TXT/?uri=CELEX:" + celex;
                 query = UrlQuery(url);
@@ -1453,13 +1529,13 @@ namespace EUCases.EULinksCheckerWordAddIn
 #endif//with_SvcRef
             public void MkUrl()
             {
-                url = "http://demo.eurocases.eu/api/Doc/ParHint/" + langid + "/" + LCID2LangId(LCID).ToString() + "/" + celex;
+                url = "http://app.eurocases.eu/api/Doc/ParHint/" + langid + "/" + LCID2LangId(LCID).ToString() + "/" + celex;
                 if (art != null) if (art != "") url += "/" + art;
             }
             public string LinksUrl(string domain)
             {
-                //                string s = "http://demo.eurocases.eu/api/Doc/DocInLinks/" + domain + "/" + langid + "/" + cLimit + "/" + celex;
-                string s = "http://demo.eurocases.eu/api/Doc/DocInLinks/" + domain + "/" + langid + "/" + LCID2LangId(LCID).ToString() + "/" + cLimit + "/" + celex;
+                //                string s = "http://app.eurocases.eu/api/Doc/DocInLinks/" + domain + "/" + langid + "/" + cLimit + "/" + celex;
+                string s = "http://app.eurocases.eu/api/Doc/DocInLinks/" + domain + "/" + langid + "/" + LCID2LangId(LCID).ToString() + "/" + cLimit + "/" + celex;
                 if (art != "") s += "/" + art;
                 return s;
             }
@@ -1470,19 +1546,19 @@ namespace EUCases.EULinksCheckerWordAddIn
 api/Doc/SearchByXmlId/{xmlId}/{domain}/{langId}/{siteLangId}
 {xmlId} - това е новия параметър
 Пример:
-http://demo.eurocases.eu/api/Doc/SearchByXmlId/64/all/1/1
-string u="http://demo.eurocases.eu/api/Doc/SearchByXmlId/"+xmlid+"/"+domain+"/"+langid+"/"+LCID2LangId(LCID).ToString()
+http://app.eurocases.eu/api/Doc/SearchByXmlId/64/all/1/1
+string u="http://app.eurocases.eu/api/Doc/SearchByXmlId/"+xmlid+"/"+domain+"/"+langid+"/"+LCID2LangId(LCID).ToString()
                  */
-                //string s = "http://demo.eurocases.eu/api/Doc/" + domain + "/SearchByTerm/" + System.Web.HttpUtility.UrlEncode(srch) + "/" + langid;
-                //return "http://demo.eurocases.eu/api/Doc/SearchByTerm/" + System.Web.HttpUtility.UrlEncode(txt) + "/" + langid;
+                //string s = "http://app.eurocases.eu/api/Doc/" + domain + "/SearchByTerm/" + System.Web.HttpUtility.UrlEncode(srch) + "/" + langid;
+                //return "http://app.eurocases.eu/api/Doc/SearchByTerm/" + System.Web.HttpUtility.UrlEncode(txt) + "/" + langid;
                 /*++++++++
                 using (WebClient client = new WebClient())
                 {
                     client.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
-                    return client.UploadString("http://demo.eurocases.eu/api/Doc/SearchByTerm/" + domain + "/" + langid + "/" + LCID2LangId(LCID).ToString() + "/", "=" + txt);
+                    return client.UploadString("http://app.eurocases.eu/api/Doc/SearchByTerm/" + domain + "/" + langid + "/" + LCID2LangId(LCID).ToString() + "/", "=" + txt);
                 }
                 +++*/
-                return "http://demo.eurocases.eu/api/Doc/SearchByXmlId/" + xmlid + "/" + domain + "/" + langid + "/" + LCID2LangId(LCID).ToString();
+                return "http://app.eurocases.eu/api/Doc/SearchByXmlId/" + xmlid + "/" + domain + "/" + langid + "/" + LCID2LangId(LCID).ToString();
             }
         };
 #if with_SvcRef
@@ -1577,8 +1653,8 @@ string u="http://demo.eurocases.eu/api/Doc/SearchByXmlId/"+xmlid+"/"+domain+"/"+
         /// <returns>The doc hint/tooltip</returns>
         public string GetDocHint(string lang, string celex, string rf)
         {
-            //http://demo.eurocases.eu/api/Doc/ParHint/{LangId}/{docNumber}/{toPar}
-            string u = "http://demo.eurocases.eu/api/Doc/ParHint/" + l2lid(lang) + "/" + LCID2LangId(LCID).ToString() + "/" + celex + ((rf == "") ? "" : "/" + rf), c = "";
+            //http://app.eurocases.eu/api/Doc/ParHint/{LangId}/{docNumber}/{toPar}
+            string u = "http://app.eurocases.eu/api/Doc/ParHint/" + l2lid(lang) + "/" + LCID2LangId(LCID).ToString() + "/" + celex + ((rf == "") ? "" : "/" + rf), c = "";
             if (u == "") return "";
             int x = Environment.TickCount;
             if (x - LastUrlMom < 3000 && LastCalledUrl == u) return "";
@@ -2093,7 +2169,7 @@ string u="http://demo.eurocases.eu/api/Doc/SearchByXmlId/"+xmlid+"/"+domain+"/"+
             {
                 if (
                     h.Address.IndexOf("http://eur-lex.europa.eu/legal-content/") < 0 &&
-                    h.Address.IndexOf("http://demo.eurocases.eu/api/Doc/SearchByXmlId/") < 0 &&
+                    h.Address.IndexOf("http://app.eurocases.eu/api/Doc/SearchByXmlId/") < 0 &&
                     h.Range.Font.ColorIndex != Word.WdColorIndex.wdGreen &&
                     h.Range.Font.ColorIndex != Word.WdColorIndex.wdRed
                     )
@@ -2206,6 +2282,75 @@ string u="http://demo.eurocases.eu/api/Doc/SearchByXmlId/"+xmlid+"/"+domain+"/"+
             Application.ScreenRefresh();
             return true;
         }
+#if with_cite
+        public class JsonCite
+        {
+            public int DocType { get; set; }
+            public string Text { get; set; }
+        }
+        private string strCite(int aType) {
+            Word.Hyperlink h = GetCurrentHyperlink();
+            if (h == null) return "";
+            rUrl r = GetRUrl(h);
+            //if(r.IsTerm)return "";
+            string u = "http://app.eurocases.eu/api/Doc/Cite/" + r.langid + "/" + r.celex + "/" + aType.ToString(), c = "";
+            HttpWebRequest q = (HttpWebRequest)WebRequest.Create(u);
+            try
+            {
+                q.Method = "GET";
+                q.Timeout = 2000;
+                q.ContentType = "text/plain";
+                q.Accept = "application/json";
+                HttpWebResponse p = (HttpWebResponse)q.GetResponse();
+                var s = new StreamReader(p.GetResponseStream(), Encoding.UTF8).ReadToEnd();
+                c = s.ToString();
+            }
+            catch (Exception e){}
+            return c;
+        }
+        private JsonCite jsonCite(int aType) {
+            /*
+В момента е качено на web.eucases.eu:8080
+
+/api/Doc/Cite/{langId}/{docNumber}/{citeType}
+citeType - int: ShortCite = 1, LongCite = 2
+
+return:
+             * JSON{
+DocType: 1 - caselaw, 2 - legislation
+Text - string
+             * }
+             */
+            string s = strCite(aType);
+            if (s == "") return null;
+            return JsonConvert.DeserializeObject<JsonCite>(s);
+        }
+        private bool ShowTypeCite(int aType) {
+#if test_cite
+            JsonCite e = new JsonCite();
+            e.DocType = 1;
+            e.Text = aType == 1 ? "OJ L 12, 16.1.2001, p. 1–23" : "Council Regulation (EC) No 44/2001 of 22 December 2000 on jurisdiction and the recognition and enforcement of judgments in civil and commercial matters. OJ L 12, 16.1.2001, p. 1–23.";
+            //e.DocType = 2;
+            //e.Text = aType == 1 ? "European Court Reports 2010 I-14309, ECLI:EU:C:2010:829" : "Judgment of the Court (Fifth Chamber) of 19 September 2013. Panellinios Syndesmos Viomichanion Metapoiisis Kapnou v Ypourgos Oikonomias kai Oikonomikon and Ypourgos Agrotikis Anaptyxis kai Trofimon. Case C-373/11. European Court Reports 2013 -00000, ECLI:EU:C:2013:567";
+#else//test_cite
+            JsonCite e = jsonCite(aType);
+            if (e == null) return false;
+#endif//test_cite
+            string c = aType == 1 ? Resources.Resource.cm_ShortCite : Resources.Resource.cm_LongCite,
+            t=e.DocType==1?Resources.Resource.cCaseLaw:Resources.Resource.cLegislation;
+            CITE.SetTxtClose(Resources.Resource.cClose);
+            CITE.SetTxtCopy(Resources.Resource.cCopy);
+            CITE.Show(e.Text,c,e.DocType);
+            //MessageBox.Show(e.Text, Resources.Resource.cInformation + " " + c + " " + t);
+            return true;
+        }
+        private bool ShortCite() {
+            return ShowTypeCite(1);
+        }
+        private bool LongCite() {
+            return ShowTypeCite(2);
+        }
+#endif//with_cite
         /// <summary>
         /// Remove the current link//i.e. the link we are on
         /// </summary>
@@ -2467,12 +2612,12 @@ string u="http://demo.eurocases.eu/api/Doc/SearchByXmlId/"+xmlid+"/"+domain+"/"+
         }
         #endregion
 #if hint
-http://demo.eurocases.eu/api/Doc/ParHint/{LangId}/{docNumber}/{toPar}
+http://app.eurocases.eu/api/Doc/ParHint/{LangId}/{docNumber}/{toPar}
 Връща JSON с поле HtmlContent. В момента като не е открито подаденото нещо в нашата база връща временнен текст, 
 който ще сменя с линк към документа в eur-lex.eu
 
 Пример:
-http://demo.eurocases.eu/api/Doc/ParHint/1/32009r1122/art2_al23
+http://app.eurocases.eu/api/Doc/ParHint/1/32009r1122/art2_al23
 public class HintObject
 {
     public string HtmlContent { get; set; }

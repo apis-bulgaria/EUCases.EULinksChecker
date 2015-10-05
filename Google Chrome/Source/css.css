@@ -1,0 +1,5 @@
+#eucasesTempContextMenu,#eucasesTempConceptContextMenu{cursor:pointer;list-style-type:none;background-color:#f0f0f0;float:left;position:absolute;border:1px solid #979797;font-size:14px;line-height:14px;font-family:Calibri}
+#eucasesTempContextMenu li,#eucasesTempConceptContextMenu li{border-left:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;padding:3px;font-size:14px;line-height:14px}
+#eucasesTempContextMenu li:hover,#eucasesTempConceptContextMenu li:hover{background-color:#d1e2f2}
+.eucases-term,.eucases-term:visited,.eucases-term:hover{color:#cc6600;text-decoration:underline;cursor:pointer}
+.eucases-link,.eucases-link:visited,.eucases-link:hover{color:#339933;text-decoration:underline}

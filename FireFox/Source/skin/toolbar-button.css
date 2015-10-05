@@ -1,0 +1,16 @@
+#myextension-button{
+	list-style-image: url("chrome://MNU/skin/btn_large.png")
+}
+toolbar[iconsize="small"] #myextension-button{
+	list-style-image: url("chrome://MNU/skin/btn_small.png")
+}
+toolbar[iconsize="small"] #BUTTON1{
+	list-style-image: url("chrome://MNU/skin/ico_send_16x16.png")!important
+}
+#BUTTON1{
+	list-style-image: url("chrome://MNU/skin/ico_24x24.png")!important
+}
+#MyMenuButton, #wrapper-MyMenuButton{
+	list-style-image: url("chrome://MNU/skin/ico_24x24.png")
+}
+menu-iconic{list-style-image: url("chrome://MNU/content/_1.png")}

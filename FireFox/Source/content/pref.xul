@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow id="MNU-prefs" title="Settings" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	buttons="accept,cancel"
+	buttonacceptlabel="Потвърди"
+	buttoncancellabel="Откажи"
+	buttonpack="center"
+	onload="_POL()"
+	onbeforeaccept="_PODBA()"
+	ondialogaccept="_PODA(event)"
+	>
+	<script src="o.js"/>
+	<prefpane id="Settings-pane" label="Settings" pack="center">
+		<preferences>
+			<preference id="UILang" name="extensions.MNU.UiLang" type="string"/>
+			<preference id="UILangIdx" name="extensions.MNU.UiLangIdx" type="int"/>
+			<preference id="NewLinkInIdx" name="extensions.MNU.NewLinkInIdx" type="int"/>
+		</preferences>
+		<hbox align="center">
+			<label control="UILang" id="UILangLblId" value="User interface language: "/>
+			<menulist preference="UILangIdx">
+				<menupopup>
+					<menuitem label="Български [bg]" value="1"/>
+					<menuitem label="Deutsch [de]" value="2"/>
+					<menuitem label="Français [fr]" value="3"/>
+					<menuitem label="English [en]" value="4"/>
+					<menuitem label="Italiano [it]" value="5"/>
+				</menupopup>
+			</menulist>
+		</hbox>
+		<hbox align="center">
+			<label control="NewLinkIn" id="NewLinkInLblId" value="New link opens in: "/>
+			<menulist preference="NewLinkInIdx">
+				<menupopup>
+					<menuitem id="NewLlinksIdx_1" label="_blank" value="1"/>
+					<menuitem id="NewLlinksIdx_2" label="_top" value="2"/>
+				</menupopup>
+			</menulist>
+		</hbox>
+	</prefpane>
+</prefwindow>

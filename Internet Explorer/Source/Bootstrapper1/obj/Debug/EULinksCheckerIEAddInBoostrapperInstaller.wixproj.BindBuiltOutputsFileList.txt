@@ -1,2 +1,2 @@
-D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.exe
-D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.wixpdb
+E:\msvs2013_prj\EUCASES\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.exe
+E:\msvs2013_prj\EUCASES\EULinksCheckerIEAddIn\Bootstrapper1\bin\Debug\EULinksCheckerIEAddInBoostrapperInstaller.wixpdb

@@ -151,6 +151,9 @@
             this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbUsername);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "fCredentials";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

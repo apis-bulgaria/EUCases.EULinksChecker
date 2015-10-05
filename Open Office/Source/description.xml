@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<description xmlns="http://openoffice.org/extensions/description/2006"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:d="http://openoffice.org/extensions/description/2006">
+
+      <identifier value="eucases.EULinksChecker" />
+      <version value="0.1" />
+
+      <dependencies>
+            <d:OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0" />
+      </dependencies>
+
+      <display-name>
+            <name lang="en">EULinksChecker</name>
+      </display-name>
+
+     <icon>
+        <default xlink:href="images/original_logo_v2.jpg" />
+     </icon>
+
+</description>

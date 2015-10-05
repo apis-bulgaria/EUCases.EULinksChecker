@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<dialog
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	onload="_I()"
+	ondialogaccept="_D()"
+	id="DlgId"
+	title="Това е тест"
+	>
+	<script src="o.js"/>
+	<hbox pack="center">
+		<label id="Msg" value="Hey!"/>
+		<textbox id="bres" flex="1" hidden="true"/>
+	</hbox>
+	<spacer flex="1"/>
+	<hbox pack="center">
+		<button id="bOK" dlgtype="accept" label="Потвърди" hidden="true" onclick="_m()"/>
+		<button id="bCancel" dlgtype="cancel" label="Откажи" hidden="true" onclick="_D()"/>
+		<button id="bYes" dlgtype="extra1" label="yes" hidden="true" onclick="SetStrPref(cModalResult,'1');_D()"/>
+		<button id="bNo" dlgtype="extra2" label="no" hidden="true" onclick="_D()"/>
+	</hbox>
+	<script>
+	function _I(){
+		SetStrPref(cModalResult,null);
+		let q=document.location.href,r=new Rsrc(),y=qArg(cType,q),m=decodeURI(qArg(cMsg,q)),b=decodeURI(qArg(cBut,q)),B=b.split(','),s=decodeURI(qArg(cRes,q));
+		B.forEach(function(_){document.getElementById('b'+_).setAttribute(cHidden,false)});
+		switch(y){
+		case ctA: y=r.cAttention;break;
+		case ctI: y=r.cInformation;break;
+		case ctW: y=r.cWarning;break;
+		case ctX: y=r.cException;break;
+		case ctQ: y=r.cQuestion;break;
+		default: y=r.cError
+		}
+		document.getElementById('bres').value=s;
+		document.getElementById('DlgId').setAttribute(cTitle,y);
+		document.getElementById('Msg').value=m
+		document.getElementById('bOK').label=r.OK;
+		document.getElementById('bCancel').label=r.Cancel
+		document.getElementById('bYes').label=r.cYes
+		document.getElementById('bNo').label=r.cNo
+	}
+	function _D(){close()}
+	function _m(){
+		let x=document.getElementById('bres');
+		if(x.hidden)SetStrPref(cModalResult,"1");else SetStrPref(cModalResult,x.value)
+	}
+	</script>
+</dialog>

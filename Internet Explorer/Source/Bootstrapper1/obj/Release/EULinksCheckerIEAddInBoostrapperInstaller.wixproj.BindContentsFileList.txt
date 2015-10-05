@@ -1,2 +1,2 @@
-D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\EULinksCheckerIEAddInMsi.msi
-D:\ApisTechnoTFS\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\cab1.cab
+E:\msvs2013_prj\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\EULinksCheckerIEAddInMsi.msi
+E:\msvs2013_prj\EUCASES\EULinksCheckerIEAddIn\SetupProject2\bin\Debug\cab1.cab

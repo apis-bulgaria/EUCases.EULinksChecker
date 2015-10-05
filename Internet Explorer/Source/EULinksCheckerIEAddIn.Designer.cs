@@ -46,22 +46,19 @@ namespace EUCases
             this.toolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip.GripMargin = new System.Windows.Forms.Padding(0);
             this.toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.toolStrip.Size = new System.Drawing.Size(645, 25);
-            this.toolStrip.TabIndex = 0;
-            this.toolStrip.Text = "toolStrip";
-            this.toolStrip.Renderer = new NoBorderToolStripRenderer();
-            
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnProcessText,
             this.btnRemoveLink,
             this.btnAddNewLink,
             this.btnRemoveCurrentLink,
             this.btnSaveToXML,
-            this.btnSettings});            
+            this.btnSettings});
+            this.toolStrip.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip.Name = "toolStrip";
+            this.toolStrip.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStrip.Size = new System.Drawing.Size(645, 25);
+            this.toolStrip.TabIndex = 0;
+            this.toolStrip.Text = "toolStrip";
             // 
             // btnProcessText
             // 
@@ -116,7 +113,7 @@ namespace EUCases
             // btnSettings
             // 
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSettings.Image = global::EUCases.Properties.Resources.Credentials;
+            this.btnSettings.Image = global::EUCases.Properties.Resources.Settings;
             this.btnSettings.ImageTransparentColor = System.Drawing.Color.White;
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(69, 22);

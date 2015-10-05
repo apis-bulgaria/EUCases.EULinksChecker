@@ -249,4 +249,22 @@
   <data name="cWorking" xml:space="preserve">
     <value>Checking for links...</value>
   </data>
+  <data name="cm_LongCite" xml:space="preserve">
+    <value>Full citation</value>
+  </data>
+  <data name="cm_ShortCite" xml:space="preserve">
+    <value>Short citation</value>
+  </data>
+  <data name="cCaseLaw" xml:space="preserve">
+    <value>CaseLaw</value>
+  </data>
+  <data name="cLegislation" xml:space="preserve">
+    <value>Legislation</value>
+  </data>
+  <data name="cClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="cCopy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
 </root>

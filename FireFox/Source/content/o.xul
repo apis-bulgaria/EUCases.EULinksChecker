@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css" href="chrome://MNU/skin/o.css" ?>
+<!DOCTYPE overlay SYSTEM "chrome://MNU/locale/o.dtd">
+	<overlay id="MNU-browser-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script type="application/x-javascript" src="chrome://MNU/content/o.js"/>
+		<stringbundleset id="stringbundleset">
+			<stringbundle id="MNU-string-bundle" src="chrome://MNU/locale/o.properties"/>
+		</stringbundleset>
+		<menubar id="main-menubar">
+			<menu id="MNU-EUL-menu" label="&MNU.EUL.label;" insertafter="MNU-hello-menu">
+				<menupopup>
+					<menuitem id="MNU-EUL-menu-item1" label="&MNU.EUL.item1.label;" oncommand="MNU.o.EI1(event)" class="menuitem-iconic" image="chrome://MNU/skin/si/CheckForLinks.png"/>
+					<menuitem id="MNU-EUL-menu-item2" label="&MNU.EUL.item2.label;" oncommand="MNU.o.EI2(event)" class="menuitem-iconic" image="chrome://MNU/skin/si/RemoveAllLinks.png"/>
+					<menuitem id="miXml" label="&MNU.Xml;" oncommand="MNU.o.Export2Xml(event)" class="menuitem-iconic" image="chrome://MNU/skin/si/SaveXml.png"/>
+					<menuseparator/>
+					<menuitem id="miSettingsId" label="&MNU.Settings;" oncommand="MNU.o.Settings(event)" class="menuitem-iconic" image="chrome://MNU/skin/si/Settings.png"/>
+				</menupopup>
+			</menu>
+		</menubar>
+		<popup id="contentAreaContextMenu" onpopupshowing="PROC(event)">
+			<menuitem id="RemoveLink" label="&MNU.RemoveLink;" oncommand="MNU.o.RemoveLink(event)" class="menuitem-iconic" image="chrome://MNU/skin/si/RemoveLink.png"/>
+			<menuitem id="RemoveLinksSel" label="&MNU.RemoveLinksSel;" oncommand="MNU.o.RemoveLinksSel(event)" class="menuitem-iconic" image="chrome://MNU/skin/si/RemoveAllLinks.png"/>
+			<menuitem id="InsertLink" label="&MNU.InsertLink;" oncommand="MNU.o.InsertLink(event)" class="menuitem-iconic" image="chrome://MNU/skin/si/AddNewLink.png"/>
+		</popup>
+		<toolbarpalette id="nav-bar">
+			<toolbaritem id="MNU-ToolbarButtons">
+				<toolbarbutton id="tbbCheck4LinksId" label="&MNU.Check4Links;" image="chrome://MNU/skin/CheckForLinks.jpg" tooltiptext="&MNU.Check4Links;" oncommand="MNU.o.EI1(event)"/>
+				<toolbarbutton id="tbbRmAllLinksId" label="&MNU.RmAllLinks;" image="chrome://MNU/skin/RemoveAllLinks.jpg" tooltiptext="&MNU.RmAllLinks;" oncommand="MNU.o.EI2(event)"/>
+				<toolbarbutton id="tbbInsertLink" label="&MNU.InsertLink;" image="chrome://MNU/skin/AddNewLink.png" tooltiptext="&MNU.InsertLink;" oncommand="MNU.o.InsertLink(event)"/>
+				<toolbarbutton id="tbbRmLinksSelId" label="&MNU.RmLinksSel;" image="chrome://MNU/skin/RemoveLink.png" tooltiptext="&MNU.RmLinksSel;" oncommand="MNU.o.RemoveLinksSel(event)"/>
+				<toolbarbutton id="tbbXmlId" label="&MNU.Xml;" image="chrome://MNU/skin/xml.jpg" tooltiptext="&MNU.Xml;" oncommand="MNU.o.Export2Xml(event)"/>
+				<toolbarbutton id="tbbSettingsId" label="&MNU.Settings;" image="chrome://MNU/skin/Settings.jpg" tooltiptext="&MNU.Settings;" oncommand="MNU.o.Settings(event)"/>
+			</toolbaritem>
+		</toolbarpalette>
+	</overlay>

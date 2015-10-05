@@ -1,0 +1,45 @@
+<script>
+	////Get window
+	var parentwin = external.menuArguments;
+	//Get document
+	var doc = parentwin.document;
+	var event = doc.parentWindow.event;
+	var clickedLink = event.srcElement;
+	//Get selection
+	var sel = doc.selection;
+	//alert(clickedLink);
+	//alert(clickedLink.outerHTML);
+	clickedLink.outerHTML = clickedLink.innerHTML;
+	var newContent = doc.body.parentNode.outerHTML;
+	//doc.clear();
+	
+	//alert(parentwin.location);
+	//doc.write(newContent);
+	
+	//function showSubMenu(){
+	//var parentwin = external.menuArguments;
+	//var doc = parentwin.document;
+	//var event = doc.parentWindow.event;
+		//var x = event.clientX;
+		//var y = event.clientY;
+		//var myDiv = doc.createElement("div");
+		//myDiv.id = "Georgi";
+		//var ul = doc.createElement("ul");
+		//var listItem1 = doc.createElement("li");
+		//var listItem2 = doc.createElement("li");
+		//ul.appendChild(listItem1);
+		//listItem1.innerHTML = "li1";
+		//ul.appendChild(listItem2);
+		//listItem2.innerHTML = "li2";
+		//myDiv.appendChild(ul);
+		//myDiv.style.position="absolute";
+		//myDiv.style.left = x + "px";
+		//myDiv.style.right = y + "px";
+		//doc.body.appendChild(myDiv);
+		//var divEl = doc.getElementById("testitem-1");
+		//alert(divEl);
+		//doc.body.appendChild(myDiv);
+	//}
+	//showSubMenu();
+	
+</script>

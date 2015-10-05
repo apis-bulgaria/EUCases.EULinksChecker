@@ -88,6 +88,15 @@ namespace EUCases.EULinksCheckerWordAddIn.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CaseLaw.
+        /// </summary>
+        internal static string cCaseLaw {
+            get {
+                return ResourceManager.GetString("cCaseLaw", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check for links.
         /// </summary>
         internal static string cCheckFrLinks {
@@ -97,11 +106,29 @@ namespace EUCases.EULinksCheckerWordAddIn.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        internal static string cClose {
+            get {
+                return ResourceManager.GetString("cClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirmation.
         /// </summary>
         internal static string cConfirmation {
             get {
                 return ResourceManager.GetString("cConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        internal static string cCopy {
+            get {
+                return ResourceManager.GetString("cCopy", resourceCulture);
             }
         }
         
@@ -147,6 +174,15 @@ namespace EUCases.EULinksCheckerWordAddIn.Resources {
         internal static string cLang {
             get {
                 return ResourceManager.GetString("cLang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Legislation.
+        /// </summary>
+        internal static string cLegislation {
+            get {
+                return ResourceManager.GetString("cLegislation", resourceCulture);
             }
         }
         
@@ -223,6 +259,15 @@ namespace EUCases.EULinksCheckerWordAddIn.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Full citation.
+        /// </summary>
+        internal static string cm_LongCite {
+            get {
+                return ResourceManager.GetString("cm_LongCite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to National case law.
         /// </summary>
         internal static string cm_NaCL {
@@ -246,6 +291,15 @@ namespace EUCases.EULinksCheckerWordAddIn.Resources {
         internal static string cm_RemoveLink {
             get {
                 return ResourceManager.GetString("cm_RemoveLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Short citation.
+        /// </summary>
+        internal static string cm_ShortCite {
+            get {
+                return ResourceManager.GetString("cm_ShortCite", resourceCulture);
             }
         }
         

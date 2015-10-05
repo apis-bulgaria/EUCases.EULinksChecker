@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data
+        xmlns:oor="http://openoffice.org/2001/registry"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        oor:name="Addons"
+        oor:package="org.openoffice.Office">
+      <node oor:name="AddonUI">
+
+        <node oor:name="Images">
+
+              <node oor:name="com.sun.star.comp.framework.addon.removeall" oor:op="replace">
+                  <prop oor:name="URL" oor:type="xs:string">
+                      <value>service:org.openoffice.comp.pyuno.eucases.RemoveAllLinks?insert</value>
+                  </prop>
+                  <node oor:name="UserDefinedImages">
+                      <prop oor:name="ImageSmallURL">
+                          <value>%origin%/images/delete-all.png</value>
+                      </prop>
+                  </node>
+              </node>
+
+            <node oor:name="com.sun.star.comp.framework.addon.checklinks" oor:op="replace">
+                  <prop oor:name="URL" oor:type="xs:string">
+                      <value>service:org.openoffice.comp.pyuno.eucases.AddLinks?insert</value>
+                  </prop>
+                  <node oor:name="UserDefinedImages">
+                      <prop oor:name="ImageSmallURL">
+                          <value>%origin%/images/add-links.png</value>
+                      </prop>
+                  </node>
+              </node>
+
+            <node oor:name="com.sun.star.comp.framework.addon.removeselection" oor:op="replace">
+                  <prop oor:name="URL" oor:type="xs:string">
+                      <value>service:org.openoffice.comp.pyuno.eucases.RemoveLinksFromSelection?insert</value>
+                  </prop>
+                  <node oor:name="UserDefinedImages">
+                      <prop oor:name="ImageSmallURL">
+                          <value>%origin%/images/delete-selection.png</value>
+                      </prop>
+                  </node>
+              </node>
+
+            <node oor:name="com.sun.star.comp.framework.addon.inserturl" oor:op="replace">
+                  <prop oor:name="URL" oor:type="xs:string">
+                      <value>service:org.openoffice.comp.pyuno.eucases.InsertLinkIntoSelection?insert</value>
+                  </prop>
+                  <node oor:name="UserDefinedImages">
+                      <prop oor:name="ImageSmallURL">
+                          <value>%origin%/images/insert-link.png</value>
+                      </prop>
+                  </node>
+              </node>
+
+             <node oor:name="com.sun.star.comp.framework.addon.savexml" oor:op="replace">
+                  <prop oor:name="URL" oor:type="xs:string">
+                      <value>service:org.openoffice.comp.pyuno.eucases.ExportToXml?insert</value>
+                  </prop>
+                  <node oor:name="UserDefinedImages">
+                      <prop oor:name="ImageSmallURL">
+                          <value>%origin%/images/save-xml.png</value>
+                      </prop>
+                  </node>
+              </node>
+
+            <!--<node oor:name="com.sun.star.comp.framework.addon.tooltip" oor:op="replace">
+                  <prop oor:name="URL" oor:type="xs:string">
+                      <value>service:org.openoffice.comp.pyuno.eucases.ShowHint?insert</value>
+                  </prop>
+                  <node oor:name="UserDefinedImages">
+                      <prop oor:name="ImageSmallURL">
+                          <value>%origin%/images/show-tooltip.png</value>
+                      </prop>
+                  </node>
+              </node>-->
+
+            <!--<node oor:name="com.sun.star.comp.framework.addon.removeselection2" oor:op="replace">
+                  <prop oor:name="URL" oor:type="xs:string">
+                      <value>service:org.openoffice.comp.pyuno.eucases.RemoveSelectedLink?insert</value>
+                  </prop>
+                  <node oor:name="UserDefinedImages">
+                      <prop oor:name="ImageSmallURL">
+                          <value>%origin%/images/delete-all.png</value>
+                      </prop>
+                  </node>
+              </node>-->
+          </node>
+
+          <!--<node oor:name="Images">
+              <node oor:name="com.sun.star.comp.framework.addon.image1" oor:op="replace">
+                  <prop oor:name="URL" oor:type="xs:string">
+                      <value>org.openoffice.comp.pyuno.eucases.RemoveAllLinks</value>
+                  </prop>
+                  <node oor:name="UserDefinedImages">
+                      <prop oor:name="ImageSmall">
+                          <value>vnd.sun.star.extension://eucases.EULinksChecker/images/delete-all.png</value>
+                      </prop>
+                  </node>
+              </node>
+          </node>-->
+
+          <node oor:name="OfficeMenuBar">
+              <node oor:name="org.openoffice.example.addon" oor:op="replace">
+                  <prop oor:name="Title" oor:type="xs:string">
+                      <value/>
+                      <value xml:lang="en-US">EuLinksChecker</value>
+                      <value xml:lang="de">EuLinksChecker</value>
+                  </prop>
+                  <prop oor:name="Context" oor:type="xs:string">
+                      <value>com.sun.star.text.TextDocument</value>
+                  </prop>
+                  <node oor:name="Submenu">
+                      <node oor:name="m1AddLinks" oor:op="replace">
+                          <prop oor:name="URL" oor:type="xs:string">
+                              <value>service:org.openoffice.comp.pyuno.eucases.AddLinks?insert</value>
+                          </prop>
+
+                          <prop oor:name="Title" oor:type="xs:string">
+                              <value/>
+                              <value xml:lang="en-US">Check for links</value>
+                              <!--<value xml:lang="de">Überprüfung für Links</value>
+                              <value xml:lang="fr">Vérifier les liens</value>
+                              <value xml:lang="bg">Провери за връзки</value>
+                              <value xml:lang="it">Verificare la presenza di collegamenti</value>-->
+                          </prop>
+                          <prop oor:name="Target" oor:type="xs:string">
+                              <value>_self</value>
+                          </prop>
+                      </node>
+                    <node oor:name="m2RemoveAllLinks" oor:op="replace">
+                          <prop oor:name="URL" oor:type="xs:string">
+                              <value>service:org.openoffice.comp.pyuno.eucases.RemoveAllLinks?insert</value>
+                          </prop>
+                          <prop oor:name="Title" oor:type="xs:string">
+                              <value/>
+                              <value xml:lang="en-US">Remove links</value>
+                              <!--<value xml:lang="de">Links entfernen</value>
+                              <value xml:lang="fr">Supprimer le liens</value>
+                              <value xml:lang="bg">Премахни връзките</value>
+                              <value xml:lang="it">Rimuovere collegamenti</value>-->
+                          </prop>
+                          <prop oor:name="Target" oor:type="xs:string">
+                              <value>_self</value>
+                          </prop>
+                    </node>
+
+                      <node oor:name="m3InsertIntoSelection" oor:op="replace">
+                          <prop oor:name="URL" oor:type="xs:string">
+                              <value>service:org.openoffice.comp.pyuno.eucases.InsertLinkIntoSelection?insert</value>
+                          </prop>
+                          <prop oor:name="Title" oor:type="xs:string">
+                              <value/>
+                              <value xml:lang="en-US">Insert link</value>
+                              <!--<value xml:lang="de">Link einfügen</value>
+                              <value xml:lang="fr">Insérer le lien</value>
+                              <value xml:lang="bg">Постави връзка</value>
+                              <value xml:lang="it">Inserisci collegamento</value>-->
+                          </prop>
+                          <prop oor:name="Target" oor:type="xs:string">
+                              <value>_self</value>
+                          </prop>
+                    </node>
+
+                     <node oor:name="m4RemoveFromSelection" oor:op="replace">
+                          <prop oor:name="URL" oor:type="xs:string">
+                              <value>service:org.openoffice.comp.pyuno.eucases.RemoveLinksFromSelection?insert</value>
+                          </prop>
+                          <prop oor:name="Title" oor:type="xs:string">
+                              <value/>
+                              <value xml:lang="en-US">Remove link from selection</value>
+                              <!--<value xml:lang="de">Links von Auswahl entfernen</value>
+                              <value xml:lang="fr">Supprimer les liens de la sélection</value>
+                              <value xml:lang="bg">Премахни връзките</value>
+                              <value xml:lang="it">Rimuovere i collegamenti da selezione</value>-->
+                          </prop>
+                          <prop oor:name="Target" oor:type="xs:string">
+                              <value>_self</value>
+                          </prop>
+                    </node>
+
+                      <node oor:name="m5Export" oor:op="replace">
+                          <prop oor:name="URL" oor:type="xs:string">
+                              <value>service:org.openoffice.comp.pyuno.eucases.ExportToXml?insert</value>
+                          </prop>
+                          <prop oor:name="Title" oor:type="xs:string">
+                              <value/>
+                              <value xml:lang="en-US">Save text to XML-file</value>
+                              <!--<value xml:lang="de">Text in XML-Datei speichern</value>
+                              <value xml:lang="fr">Enregistrer le texte au format XML</value>
+                              <value xml:lang="bg">Запиши текста в XML-file</value>
+                              <value xml:lang="it">Salva il testo come file XML</value>-->
+                          </prop>
+                          <prop oor:name="Target" oor:type="xs:string">
+                              <value>_self</value>
+                          </prop>
+                    </node>
+                  </node>
+              </node>
+          </node>
+      </node>
+  </oor:component-data>
+<!--<oor:component-data xmlns:oor="http://openoffice.org/2001/registry"
+             xmlns:xs="http://www.w3.org/2001/XMLSchema"
+             oor:name="Addons"
+             oor:package="org.openoffice.Office">
+
+
+  <node oor:name="AddonUI">
+    <node oor:name="AddonMenu">
+      <node oor:name="org.openoffice.comp.pyuno.eucases.AddLinks" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>service:org.openoffice.comp.pyuno.eucases.AddLinks?insert</value>
+        </prop>
+        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+          <value>private:image/3216</value>
+        </prop>
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Add links</value>
+        </prop>
+      </node>
+    </node>
+  </node>
+
+</oor:component-data>-->
