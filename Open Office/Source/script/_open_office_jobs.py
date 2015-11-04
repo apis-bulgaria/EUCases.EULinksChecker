@@ -654,7 +654,7 @@ class ShowHintJob(unohelper.Base, XJobExecutor):
             desktop = self.ctx.ServiceManager.createInstanceWithContext("com.sun.star.frame.Desktop", self.ctx)
             document = desktop.getCurrentComponent()
             url, color = SelectionHelper.get_url_and_color(document)
-            if color == 32768 and url:
+            if color == Constant.Green_Color and url:
                 service_url = HintUrlBuilder.build_url(url)
                 webbrowser.open_new(service_url)
 
@@ -1004,6 +1004,7 @@ class TermsUrlBuilder:
             # http://demo.eurocases.eu/api/Doc/SearchByXmlId/1172/NatCL/4/4
             # http://demo.eurocases.eu/api/Doc/SearchByXmlId/1172/all/4/4
             url = url.replace('all', url_type)
+            url = url.replace('demo', 'app')
             return url
 
         return ''
@@ -1347,7 +1348,7 @@ class LinkingService:
         return content
 
     def get_citate(self, doc_number, lang_id, citate_type):
-        request_url = 'http://web.eucases.eu:8080/api/Doc/Cite/' + str(lang_id) + '/' + doc_number + '/' + str(citate_type)
+        request_url = 'http://app.eurocases.eu/api/Doc/Cite/' + str(lang_id) + '/' + doc_number + '/' + str(citate_type)
 
         response = urllib2.urlopen(request_url).read()
         json_data = json.loads(response)
@@ -2186,9 +2187,9 @@ class Constant:
 
     UI_ContextMenu_EN_Remove = 'Remove'
 
-    EurocasesRef_BaseUrl = 'http://demo.eurocases.eu/api/Doc/DocInLinks/'
-    EurocasesHint_BaseUrl = 'http://demo.eurocases.eu/api/Doc/ParHint/4/4/'
-    EurocasesTerm_BaesUrl = 'http://demo.eurocases.eu/api/Doc/SearchByXmlId/'
+    EurocasesRef_BaseUrl = 'http://app.eurocases.eu/api/Doc/DocInLinks/'
+    EurocasesHint_BaseUrl = 'http://app.eurocases.eu/api/Doc/ParHint/4/4/'
+    EurocasesTerm_BaesUrl = 'http://app.eurocases.eu/api/Doc/SearchByXmlId/'
     EurocasesRefType_NationalCaseType = 'NatCL'
     EurocasesRefType_NationalLegislationType = 'NatL'
     EurocasesRefType_EuCaseType = 'EuCL'
@@ -2216,7 +2217,7 @@ class Constant:
     Command_Long_Citation = 'service:org.openoffice.comp.pyuno.eucases.GetLongCitate?insert'
     Command_Short_Citation = 'service:org.openoffice.comp.pyuno.eucases.GetShortCitate?insert'
 
-    Green_Color = 32768
+    Green_Color = 3381555
     _Red_Color = 16711680
     Red_Color = 13395456
     FullCitate = 2
